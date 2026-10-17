@@ -1,0 +1,246 @@
+{
+  "cases": [
+    {
+      "case_id": "toxic_implant",
+      "case_label": "Toxic Implant",
+      "plaintiff_descriptor": "Implant recipients",
+      "defendant_descriptor": "Silicone implant medical device manufacturer",
+      "case_summary_text": "A group of individuals brought lawsuits against a medical device manufacturer, claiming that long-term use of a silicone-based implant caused them to develop serious systemic health problems, including autoimmune and connective tissue disorders.\n\nThe plaintiffs argued that silicone from the implants could migrate within the body and trigger harmful immune responses, and that the manufacturer failed to adequately warn users of these risks.\n\nThe manufacturer denied that silicone implants cause systemic disease, pointing to large population studies that found no increased risk among implant recipients. The manufacturer also argued that the plaintiffs’ symptoms could be explained by other factors unrelated to the implants.\n\nThe dispute centered on whether silicone implants are capable of causing systemic illness, whether users were exposed in a way that could plausibly cause such harm, and how to interpret the scientific evidence presented by both sides.",
+      "claims": [
+        {
+          "case_id": "toxic_implant",
+          "claim_id": "l2_mechanism",
+          "claim_text": "Silicone from breast implants can spread through the body and trigger harmful immune reactions."
+        },
+        {
+          "case_id": "toxic_implant",
+          "claim_id": "l3_correlation",
+          "claim_text": "People with silicone breast implants develop autoimmune or connective tissue disease at higher rates than similar people without implants."
+        },
+        {
+          "case_id": "toxic_implant",
+          "claim_id": "l4_alternative_explanations",
+          "claim_text": "The plaintiffs’ symptoms are unlikely to be explained by medical conditions or health problems unrelated to their silicone breast implants."
+        },
+        {
+          "case_id": "toxic_implant",
+          "claim_id": "l5_manufacturer_knowledge",
+          "claim_text": "Before silicone breast implants were widely used, the manufacturer knew or should have known that the implants could cause serious systemic health problems."
+        }
+      ],
+      "facts": [
+        {
+          "case_id": "toxic_implant",
+          "claim_id": "l2_mechanism",
+          "fact_id": "l2_f2",
+          "direction": "defendant",
+          "fact_text": "Medical review panels concluded that existing evidence did not show a clear biological mechanism linking silicone implants to autoimmune disease."
+        },
+        {
+          "case_id": "toxic_implant",
+          "claim_id": "l2_mechanism",
+          "fact_id": "l2_f4",
+          "direction": "plaintiff",
+          "fact_text": "Some experts proposed that silicone could amplify immune reactions in certain susceptible individuals."
+        },
+        {
+          "case_id": "toxic_implant",
+          "claim_id": "l3_correlation",
+          "fact_id": "l3_f1",
+          "direction": "defendant",
+          "fact_text": "Large population studies found that women with silicone implants did not develop autoimmune disease at higher rates than similar women without implants."
+        },
+        {
+          "case_id": "toxic_implant",
+          "claim_id": "l3_correlation",
+          "fact_id": "l3_f4",
+          "direction": "plaintiff",
+          "fact_text": "Some doctors reported seeing unusually high numbers of autoimmune symptoms among patients with silicone implants."
+        },
+        {
+          "case_id": "toxic_implant",
+          "claim_id": "l4_alternative_explanations",
+          "fact_id": "l4_f3",
+          "direction": "defendant",
+          "fact_text": "Some plaintiffs had other medical conditions that could also explain their symptoms."
+        },
+        {
+          "case_id": "toxic_implant",
+          "claim_id": "l4_alternative_explanations",
+          "fact_id": "l4_f4",
+          "direction": "plaintiff",
+          "fact_text": "Some plaintiffs reported that their symptoms worsened after receiving implants and improved after the implants were removed."
+        },
+        {
+          "case_id": "toxic_implant",
+          "claim_id": "l5_manufacturer_knowledge",
+          "fact_id": "l5_f1",
+          "direction": "defendant",
+          "fact_text": "Early regulatory reviews concluded that there was no credible evidence linking silicone implants to autoimmune disease."
+        },
+        {
+          "case_id": "toxic_implant",
+          "claim_id": "l5_manufacturer_knowledge",
+          "fact_id": "l5_f4",
+          "direction": "plaintiff",
+          "fact_text": "Some former employees testified that possible systemic health risks were discussed internally before public controversy emerged."
+        }
+      ]
+    },
+    {
+      "case_id": "employment_discrimination",
+      "case_label": "Employment Discrimination",
+      "plaintiff_descriptor": "Former employee",
+      "defendant_descriptor": "Employer",
+      "case_summary_text": "A former employee sued their employer, alleging that they were denied promotion and later terminated because of their race and gender.\n\nThe employee argued that they were qualified for advancement, had received positive performance evaluations, and were treated less favorably than similarly situated coworkers outside their protected groups. They pointed to statements by supervisors and patterns in promotion decisions as evidence of discrimination.\n\nThe employer denied that any employment decisions were based on race or gender. The employer argued that the employee’s performance declined, that disciplinary actions were justified, and that promotion and termination decisions were driven by legitimate business considerations.\n\nThe dispute centered on whether the employer’s stated reasons were genuine or whether discrimination played a role in the challenged employment actions.",
+      "claims": [
+        {
+          "case_id": "employment_discrimination",
+          "claim_id": "e2_comparator_treatment",
+          "claim_text": "Comparable employees outside the plaintiff’s protected group were treated more favorably in promotion or discipline decisions."
+        },
+        {
+          "case_id": "employment_discrimination",
+          "claim_id": "e3_performance_justification",
+          "claim_text": "The employee’s performance and workplace conduct did not justify the promotion denial and termination decisions."
+        },
+        {
+          "case_id": "employment_discrimination",
+          "claim_id": "e5_bias_remarks",
+          "claim_text": "Supervisors made statements or behaved in ways that reflected bias against the employee’s protected group."
+        }
+      ],
+      "facts": [
+        {
+          "case_id": "employment_discrimination",
+          "claim_id": "e2_comparator_treatment",
+          "fact_id": "e2_f4",
+          "direction": "defendant",
+          "fact_text": "The employer presented records showing that employees outside the plaintiff’s protected group who received better treatment had stronger performance records or fewer policy violations."
+        },
+        {
+          "case_id": "employment_discrimination",
+          "claim_id": "e2_comparator_treatment",
+          "fact_id": "e2_f3",
+          "direction": "plaintiff",
+          "fact_text": "Internal company data showed that employees from the plaintiff’s protected group were promoted less often despite receiving similar performance evaluations."
+        },
+        {
+          "case_id": "employment_discrimination",
+          "claim_id": "e3_performance_justification",
+          "fact_id": "e3_f1",
+          "direction": "defendant",
+          "fact_text": "Internal evaluations documented repeated performance concerns, including missed deadlines and conflicts with coworkers."
+        },
+        {
+          "case_id": "employment_discrimination",
+          "claim_id": "e3_performance_justification",
+          "fact_id": "e3_f2",
+          "direction": "plaintiff",
+          "fact_text": "Earlier performance reviews described the employee as competent and recommended the employee for advancement."
+        },
+        {
+          "case_id": "employment_discrimination",
+          "claim_id": "e5_bias_remarks",
+          "fact_id": "e5_f3c",
+          "direction": "defendant",
+          "fact_text": "Employees from the plaintiff’s protected group held leadership and supervisory positions within the department during the relevant period."
+        },
+        {
+          "case_id": "employment_discrimination",
+          "claim_id": "e5_bias_remarks",
+          "fact_id": "e5_f1",
+          "direction": "plaintiff",
+          "fact_text": "A supervisor involved in the promotion decision made comments about the employee’s race or gender, and multiple coworkers documented those remarks."
+        }
+      ]
+    },
+    {
+      "case_id": "consumer_fraud",
+      "case_label": "Consumer Fraud",
+      "plaintiff_descriptor": "Consumers",
+      "defendant_descriptor": "Household product company",
+      "case_summary_text": "Consumers sued a company that marketed and sold a household product, alleging that its advertising and packaging misled buyers about how the product would perform.\n\nThe consumers argued that the product did not reliably deliver the performance results emphasized in the marketing and that important limitations affecting performance were not clearly disclosed at the time of purchase. They also claimed that the marketing influenced their decision to buy the product.\n\nThe company denied wrongdoing, arguing that its performance claims were supported by testing, that any limitations were disclosed, and that most consumers experienced the product as performing as advertised.\n\nThe dispute centered on whether the company’s marketing statements were misleading and whether consumers relied on those statements when purchasing the product.",
+      "claims": [
+        {
+          "case_id": "consumer_fraud",
+          "claim_id": "f1_misleading_claims",
+          "claim_text": "The company made misleading claims about the product’s performance."
+        },
+        {
+          "case_id": "consumer_fraud",
+          "claim_id": "f2_evidence_basis",
+          "claim_text": "At the time the claims were made, the company lacked reliable evidence that the product performed as advertised."
+        },
+        {
+          "case_id": "consumer_fraud",
+          "claim_id": "f3_user_experience",
+          "claim_text": "Consumers reported that the product did not perform as well as the company had advertised."
+        },
+        {
+          "case_id": "consumer_fraud",
+          "claim_id": "f4_purchase_influence",
+          "claim_text": "The company’s marketing claims influenced consumers’ decisions to purchase the product."
+        }
+      ],
+      "facts": [
+        {
+          "case_id": "consumer_fraud",
+          "claim_id": "f1_misleading_claims",
+          "fact_id": "c2_f3",
+          "direction": "defendant",
+          "fact_text": "The product packaging included a clearly labeled section describing important limitations and conditions affecting performance, placed next to the performance claims and written in plain language."
+        },
+        {
+          "case_id": "consumer_fraud",
+          "claim_id": "f1_misleading_claims",
+          "fact_id": "c1_f1",
+          "direction": "plaintiff",
+          "fact_text": "Independent product testing conducted under typical household conditions found that the product consistently failed to achieve the performance results emphasized in the company’s advertising."
+        },
+        {
+          "case_id": "consumer_fraud",
+          "claim_id": "f2_evidence_basis",
+          "fact_id": "c3_f2",
+          "direction": "defendant",
+          "fact_text": "In developing the advertising, the company relied in part on expert consultants who advised that the performance claims were reasonable based on existing industry knowledge."
+        },
+        {
+          "case_id": "consumer_fraud",
+          "claim_id": "f2_evidence_basis",
+          "fact_id": "c3_f3",
+          "direction": "plaintiff",
+          "fact_text": "Internal testing conducted before the marketing launch showed that the product failed to achieve the advertised performance results under common use conditions, and those findings were not reflected in the materials used to approve the marketing claims."
+        },
+        {
+          "case_id": "consumer_fraud",
+          "claim_id": "f3_user_experience",
+          "fact_id": "c4_f1",
+          "direction": "defendant",
+          "fact_text": "Post-sale customer surveys conducted across thousands of purchases showed that most respondents reported being satisfied with the product’s performance and said it met or exceeded their expectations based on the advertising."
+        },
+        {
+          "case_id": "consumer_fraud",
+          "claim_id": "f3_user_experience",
+          "fact_id": "c4_f4",
+          "direction": "plaintiff",
+          "fact_text": "Online reviews included numerous accounts describing disappointing results, often accompanied by photos or videos of the product’s poor performance."
+        },
+        {
+          "case_id": "consumer_fraud",
+          "claim_id": "f4_purchase_influence",
+          "fact_id": "c5_f4",
+          "direction": "defendant",
+          "fact_text": "Some consumers reported that they did not closely review the product’s advertising before purchasing and instead relied on recommendations from friends or prior experience with similar products."
+        },
+        {
+          "case_id": "consumer_fraud",
+          "claim_id": "f4_purchase_influence",
+          "fact_id": "c5_f1",
+          "direction": "plaintiff",
+          "fact_text": "Consumer surveys conducted shortly after purchase showed that many buyers chose the product because of its advertised performance benefits and often recalled specific phrases or images from the packaging."
+        }
+      ]
+    }
+  ]
+}

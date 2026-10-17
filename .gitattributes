@@ -1,0 +1,6 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Preserve the upstream jsPsych browser distribution without applying this
+# repository's whitespace checks to compiled third-party files.
+studies/study_1_sticks/experiment/jspsych/** -whitespace

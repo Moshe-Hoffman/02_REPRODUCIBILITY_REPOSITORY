@@ -1,0 +1,185 @@
+body {
+  background-color: lightgray;
+}
+
+/* Style for the sticks container */
+#sticks-container {
+    white-space: nowrap; /* Prevent sticks from wrapping to the next line */
+    overflow-x: auto; /* Add horizontal scrollbar if needed */
+  }
+  
+  /* Style for each stick container */
+  .stick-container {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 10px; /* Adjust the spacing between sticks */
+    margin-bottom: 40px;
+    margin-top: 20px;
+    position: relative; /* Ensure stick container is positioned relative to allow absolute positioning of rectangles */
+  }
+
+  #guess-container {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 10px; /* Adjust the spacing between sticks */
+    padding-bottom: 40px;
+    margin-top: 20px;
+    position: relative; /* Ensure stick container is positioned relative to allow absolute positioning of rectangles */
+  }
+
+    /* Style for each stick container */
+    .stick-wrapper {
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: 10px; /* Adjust the spacing between sticks */
+        position: relative; /* Ensure stick container is positioned relative to allow absolute positioning of rectangles */
+        }
+  
+  /* Style for the stick */
+  .stick {
+    display: inline-block;
+    width: 20px; /* Change this value as needed */
+    height: 100px; /* Change this value as needed */
+    background-color: black;
+    margin-right: 10px; /* Adjust the spacing between sticks */
+  }
+  
+  /* Style for the stick length text */
+  .stick-length {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  /* Style for the checkbox */
+  .stick-checkbox {
+    display: block;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Style for the rectangle */
+  .rectangle {
+    width: 35px; /* Adjust width as needed */
+    height: 180px; /* Adjust height as needed */
+    background-color: blue; /* Adjust color as needed */
+    position: absolute;
+    bottom: 0; /* Ensure rectangles appear below other elements */
+    left: 0;
+  }
+  
+  /* Additional styles for the container */
+  #stick-trial-container {
+    text-align: center;
+  }
+  
+  #instruction-text {
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+/* Styles for instruction pages */
+.instruction-page {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.instruction-page p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.instruction-page p, 
+.instruction-page .section {
+  text-align: left;
+}
+
+
+
+.instruction-page .title {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.instruction-page .highlight {
+  background-color: #f1c40f;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+
+
+.instruction-page img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.instruction-page .role {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.instruction-page ul, .instruction-page ol {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.instruction-page li {
+  margin-bottom: 10px;
+}
+
+.instruction-page .section {
+  margin-bottom: 30px;
+}
+
+/* New style for consistent image sizing */
+.instruction-page .consistent-image {
+  width: 500px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Center the stick displays and add a border */
+.sticks-display {
+/*  display: flex; */
+  justify-content: center; /* Center horizontally */
+  margin: 40px auto; /* Add some space */
+  padding: 20px 20px;
+  border: 2px solid #333; /* Add a border */
+  border-radius: 12px; /* Optional: rounded corners */
+  background-color: #fff; /* Optional: make it stand out */
+  width: fit-content; /* Fit content width */
+  height: 150px; /* Adjust to match the tallest possible stick */
+  align-items: center; /* Ensures sticks are aligned at the bottom */
+  overflow: hidden; /* Prevents elements from going outside the box */
+
+}
+
+/* ─────────────────────  consent-screen overrides  ─────────────────────
+   These only apply to the trial that has css_classes: ['big-consent'] */
+.big-consent .jspsych-content-wrapper { max-width: 95vw !important; overflow: auto; }
+
+.big-consent object#consent-pdf {
+  width: 300%;           /* grow wider than the container … */
+  height: 80vh;
+  transform: scale(1); /* …then zoom everything 25 % */
+  transform-origin: top left;
+}

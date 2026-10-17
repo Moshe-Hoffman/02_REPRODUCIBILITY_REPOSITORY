@@ -1,0 +1,46 @@
+metric,field,comparison,target,tolerance
+sample:N,value,equal,304,0
+"descriptive changes:Claim change, assigned to oppose",value,equal,-5.6,0.06
+"descriptive changes:Claim change, assigned to support",value,equal,5.9,0.06
+"descriptive changes:Policy-support change, assigned to oppose",value,equal,-14.3,0.06
+"descriptive changes:Policy-support change, assigned to support",value,equal,5.5,0.06
+advocacy effects:Claim advocacy,value,equal,0.460,0.0006
+advocacy effects:Claim advocacy,se,equal,0.074,0.0006
+advocacy effects:Claim advocacy,p,less_than,0.001,0
+advocacy effects:Quantitative advocacy,value,equal,0.182,0.0006
+advocacy effects:Quantitative advocacy,se,equal,0.054,0.0006
+advocacy effects:Quantitative advocacy,p,less_than,0.001,0
+advocacy effects:Policy-support advocacy,value,equal,0.831,0.0006
+advocacy effects:Policy-support advocacy,se,equal,0.105,0.0006
+advocacy effects:Policy-support advocacy,p,less_than,0.001,0
+asymmetric updating:Pro-evidence responsiveness,value,equal,0.295,0.0006
+asymmetric updating:Pro-evidence responsiveness,se,equal,0.165,0.0006
+asymmetric updating:Pro-evidence responsiveness,p,equal,0.037,0.0006
+asymmetric updating:Anti-evidence responsiveness,value,equal,0.509,0.0006
+asymmetric updating:Anti-evidence responsiveness,se,equal,0.154,0.0006
+asymmetric updating:Anti-evidence responsiveness,p,less_than,0.001,0
+asymmetric updating:Pooled asymmetric updating,value,equal,0.804,0.0006
+asymmetric updating:Pooled asymmetric updating,se,equal,0.266,0.0006
+asymmetric updating:Pooled asymmetric updating,p,equal,0.001,0.0006
+claim-alignment moderator:Pro evidence on advocacy-aligned claims,value,equal,0.250,0.0006
+claim-alignment moderator:Pro evidence on advocacy-aligned claims,p,equal,0.040,0.0006
+claim-alignment moderator:Anti evidence on advocacy-aligned claims,value,equal,0.380,0.0006
+claim-alignment moderator:Anti evidence on advocacy-aligned claims,p,equal,0.004,0.0006
+"evidence-alignment asymmetry, all claims:Claim warrantedness",value,equal,0.408,0.0006
+"evidence-alignment asymmetry, all claims:Claim warrantedness",se,equal,0.210,0.0006
+"evidence-alignment asymmetry, all claims:Claim warrantedness",p,equal,0.026,0.0006
+"evidence-alignment asymmetry, all claims:Quantitative estimates",p,equal,0.132,0.0006
+"evidence-alignment asymmetry, all claims:Policy support",p,equal,0.669,0.0006
+claim-alignment asymmetry:Quantitative estimates,value,equal,0.204,0.0006
+claim-alignment asymmetry:Quantitative estimates,p,equal,0.042,0.0006
+"process attenuation:Claim advocacy, all process measures",value,equal,26,0.6
+"process attenuation:Claim advocacy, all process measures",p,less_than,0.001,0
+"process attenuation:Quantitative advocacy, all process measures",value,equal,11,0.6
+"process attenuation:Quantitative advocacy, all process measures",p,greater_than,0.05,0
+"process attenuation:Policy-support advocacy, all process measures",value,equal,21,0.6
+"process attenuation:Policy-support advocacy, all process measures",p,equal,0.010,0.0006
+"process attenuation:Pooled asymmetric updating on advocacy-aligned claims, sharing only",value,equal,17,0.6
+"process attenuation:Pooled asymmetric updating on advocacy-aligned claims, sharing only",p,equal,0.113,0.0006
+"process attenuation:Pooled asymmetric updating on advocacy-aligned claims, all process measures",value,equal,54,0.6
+"process attenuation:Pooled asymmetric updating on advocacy-aligned claims, all process measures",se,equal,0.144,0.0006
+"process attenuation:Pooled asymmetric updating on advocacy-aligned claims, all process measures",p,equal,0.001,0.0006

@@ -1,0 +1,17 @@
+metric,field,comparison,target,tolerance
+sample:N,value,equal,288,0
+advocacy effects:Claim warrantedness,value,equal,0.383,0.0006
+advocacy effects:Claim warrantedness,se,equal,0.070,0.0006
+advocacy effects:Claim warrantedness,p,less_than,0.001,0
+advocacy effects:Quantitative estimates,value,equal,0.207,0.0006
+advocacy effects:Quantitative estimates,se,equal,0.050,0.0006
+advocacy effects:Quantitative estimates,p,less_than,0.001,0
+advocacy effects:Policy support,value,equal,0.524,0.0006
+advocacy effects:Policy support,se,equal,0.117,0.0006
+advocacy effects:Policy support,p,less_than,0.001,0
+sharing attenuation:Claim warrantedness,value,equal,36,0.6
+sharing attenuation:Claim warrantedness,p,less_than,0.0031,0
+sharing attenuation:Quantitative estimates,value,equal,25,0.6
+sharing attenuation:Quantitative estimates,p,less_than,0.0031,0
+sharing attenuation:Policy support,value,equal,45,0.6
+sharing attenuation:Policy support,p,less_than,0.0031,0

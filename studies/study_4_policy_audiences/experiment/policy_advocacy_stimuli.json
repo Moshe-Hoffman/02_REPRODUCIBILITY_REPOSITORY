@@ -1,0 +1,811 @@
+{
+  "schema_version": "policy_advocacy_stimuli_v1",
+  "source_workbook": "june30th_post_validation_stimuli.xlsx",
+  "generated_note": "Converted from normalized workbook tables: Policies, Claims, Facts, Quantitative_Questions.",
+  "policies": [
+    {
+      "policy_id": "min_wage",
+      "policy_name": "Minimum Wage",
+      "proposal_text": "The minimum wage should be increased.",
+      "debate_summary": "Supporters argue that raising the minimum wage would reduce financial hardship for low-wage workers. Opponents argue that it could reduce employment, raise consumer prices, and increase business closures among low-wage employers.",
+      "status": "Locked",
+      "notes": "Minimum-wage policy module locked after audit; includes five claims.",
+      "claims": [
+        {
+          "claim_id": "mw_c01",
+          "claim_text": "Raising the minimum wage causes substantial job losses among low-wage workers.",
+          "claim_valence_for_policy": "Con",
+          "status": "Locked",
+          "notes": "Audited; quant benchmark based on CBO $7.25 to $9.00 proposal.",
+          "facts": [
+            {
+              "fact_id": "mw_c01_p1",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "A major review of minimum-wage studies concludes that the evidence generally points to job losses for low-skilled workers after minimum-wage increases.",
+              "source_name": "Neumark & Wascher review",
+              "source_url": "https://www.nowpublishers.com/article/Details/MIC-015",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Review/synthesis source."
+            },
+            {
+              "fact_id": "mw_c01_p2",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "A study of federal minimum-wage increases during the Great Recession finds that employment fell among low-skilled workers in states most affected by the higher minimum wage.",
+              "source_name": "Clemens & Wither",
+              "source_url": "https://www.nber.org/papers/w20724",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Empirical source."
+            },
+            {
+              "fact_id": "mw_c01_o1",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "A study of fast-food restaurants in New Jersey and Pennsylvania found little evidence that New Jersey's minimum-wage increase reduced employment.",
+              "source_name": "Card & Krueger",
+              "source_url": "https://davidcard.berkeley.edu/papers/njmin-aer.pdf",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Classic natural experiment."
+            },
+            {
+              "fact_id": "mw_c01_o2",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "A study comparing neighboring counties across state borders found little evidence that minimum-wage increases reduced employment in restaurants and other low-wage sectors.",
+              "source_name": "Dube, Lester & Reich",
+              "source_url": "https://doi.org/10.1162/REST_a_00039",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Border-county comparison design."
+            }
+          ],
+          "quantitative_questions": [
+            {
+              "question_id": "mw_c01_q",
+              "question_text": "Suppose the federal minimum wage were increased to $15.00 per hour. Approximately what percentage of low-wage workers whose wages would increase because of the policy do you think would become unemployed as a result? Click here to see the source and assumptions that will be used for benchmarking.",
+              "input_type": "numeric_text_box",
+              "units_label": "% of low-wage workers becoming unemployed",
+              "allowed_min": 0,
+              "allowed_max": 100,
+              "benchmark_value": 5.2,
+              "benchmark_units": "% of low-wage workers becoming unemployed",
+              "benchmark_source": "Congressional Budget Office (2021), The Budgetary Effects of the Raise the Wage Act of 2021",
+              "benchmark_url": "https://www.cbo.gov/publication/56975",
+              "benchmark_assumptions": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\nSource: Congressional Budget Office (2021), The Budgetary Effects of the Raise the Wage Act of 2021.\n\nThe Congressional Budget Office analyzed a proposal to gradually increase the federal minimum wage to $15.00 per hour.\n\nThe Congressional Budget Office projected both the reduction in employment and the number of low-wage workers whose wages would increase because of the policy. The benchmark used in this study is calculated by dividing the projected reduction in employment by the total number of low-wage workers whose wages were projected to increase.",
+              "higher_value_supports_claim": true,
+              "higher_value_supports_policy": false,
+              "status": "Locked",
+              "notes": "Internal derivation: 1.4 million projected reduction in employment divided by 27 million workers projected to receive higher wages = 5.2% of workers becoming unemployed. The denominator is 17 million directly affected workers plus 10 million indirectly affected workers.",
+              "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** Congressional Budget Office (2021), The Budgetary Effects of the Raise the Wage Act of 2021.\n\nThe Congressional Budget Office analyzed a proposal to gradually increase the federal minimum wage to $15.00 per hour.\n\nThe Congressional Budget Office projected both the reduction in employment and the number of low-wage workers whose wages would increase because of the policy. The benchmark used in this study is calculated by dividing the projected reduction in employment by the total number of low-wage workers whose wages were projected to increase."
+            }
+          ]
+        },
+        {
+          "claim_id": "mw_c04",
+          "claim_text": "Raising the minimum wage meaningfully reduces poverty and financial hardship among low-income households.",
+          "claim_valence_for_policy": "Pro",
+          "status": "Locked",
+          "notes": "Audited and upgraded to four fact cards; added CBO poverty-projection pro fact.",
+          "facts": [
+            {
+              "fact_id": "mw_c04_p1",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "A study of family incomes finds that higher minimum wages raise incomes near the bottom of the income distribution and reduce poverty among non-elderly households.",
+              "source_name": "Dube",
+              "source_url": "https://www.aeaweb.org/articles?id=10.1257/app.20170085",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Empirical poverty/family income source."
+            },
+            {
+              "fact_id": "mw_c04_p2",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "A Congressional Budget Office analysis projects that increasing the federal minimum wage would lift hundreds of thousands of people out of poverty.",
+              "source_name": "Congressional Budget Office",
+              "source_url": "https://www.cbo.gov/publication/44995",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "New pro fact added during audit; policy projection source."
+            },
+            {
+              "fact_id": "mw_c04_o1",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "A study of family incomes finds that minimum-wage increases do not consistently produce meaningful reductions in overall poverty because some families gain income while others lose income.",
+              "source_name": "Neumark et al.",
+              "source_url": "https://www.nber.org/papers/w6127",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Mixed/con poverty source."
+            },
+            {
+              "fact_id": "mw_c04_o2",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "A recent study using nearly four decades of U.S. data finds little evidence that minimum-wage increases reduce poverty in the long run.",
+              "source_name": "Burkhauser et al.",
+              "source_url": "https://www.nber.org/system/files/working_papers/w31182/w31182.pdf",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Source URL should receive final source-url audit before deployment."
+            }
+          ],
+          "quantitative_questions": [
+            {
+              "question_id": "mw_c04_q",
+              "question_text": "If the federal minimum wage were increased to $15.00 per hour, Out of every 100 people currently living in poverty, about how many do you think would be lifted out of poverty as a result? Click here to see the source and assumptions that will be used for benchmarking.",
+              "input_type": "numeric_text_box",
+              "units_label": "people out of every 100",
+              "allowed_min": 0,
+              "allowed_max": 100,
+              "benchmark_value": 2.4,
+              "benchmark_units": "people out of every 100",
+              "benchmark_source": "Congressional Budget Office (2021), The Budgetary Effects of the Raise the Wage Act of 2021",
+              "benchmark_url": "https://www.cbo.gov/publication/56975",
+              "benchmark_assumptions": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\nSource: Congressional Budget Office (2021), The Budgetary Effects of the Raise the Wage Act of 2021.\n\nThe Congressional Budget Office analyzed a proposal to gradually increase the federal minimum wage to $15.00 per hour.\n\nThe Congressional Budget Office projected how many people would be lifted out of poverty under that proposal. The benchmark used in this study is calculated by dividing that projection by the estimated number of people living in poverty at the time of the analysis.",
+              "higher_value_supports_claim": true,
+              "higher_value_supports_policy": true,
+              "status": "Locked",
+              "notes": "Internal derivation: 0.9 million projected reduction in the number of people in poverty divided by 37.2 million people living in poverty in the United States around the time of the analysis = 2.4%.",
+              "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** Congressional Budget Office (2021), The Budgetary Effects of the Raise the Wage Act of 2021.\n\nThe Congressional Budget Office analyzed a proposal to gradually increase the federal minimum wage to $15.00 per hour.\n\nThe Congressional Budget Office projected how many people would be lifted out of poverty under that proposal. The benchmark used in this study is calculated by dividing that projection by the estimated number of people living in poverty at the time of the analysis."
+            },
+            {
+              "question_id": "mw_c04_q2",
+              "question_text": "Suppose 100 workers' wages increased after a $1 increase in the minimum wage. Because of the increase, how many of the 100 would no longer struggle to afford enough food? Click here to see the source and assumptions that will be used for benchmarking.",
+              "input_type": "numeric_text_box",
+              "units_label": "workers out of every 100",
+              "allowed_min": 0,
+              "allowed_max": 100,
+              "benchmark_value": 1.5,
+              "benchmark_units": "workers out of every 100",
+              "benchmark_source": "IZA discussion paper on minimum wage and food insufficiency",
+              "benchmark_url": "https://docs.iza.org/dp18142.pdf",
+              "benchmark_assumptions": "Benchmark is estimated reduction in food insufficiency among workers whose wages increase following a $1 minimum wage increase.",
+              "higher_value_supports_claim": true,
+              "higher_value_supports_policy": true,
+              "status": "Locked",
+              "notes": "Internal derivation: benchmark is the reported 1.5 percentage-point reduction in food insufficiency among workers whose wages increase following a $1 minimum-wage increase; expressed as 1.5 fewer workers out of every 100.",
+              "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** IZA discussion paper on minimum wage and food insufficiency.\n\nResearchers studied the effects of a $1.00 increase in the minimum wage on workers whose wages would increase because of the policy.\n\nThe benchmark is based on the estimated reduction in the share of those workers who would no longer struggle to afford enough food following the policy change."
+            }
+          ]
+        },
+        {
+          "claim_id": "mw_c05",
+          "claim_text": "Increasing the minimum wage substantially increases consumer prices.",
+          "claim_valence_for_policy": "Con",
+          "status": "Locked",
+          "notes": "Consumer-prices claim revised after audit; restaurant-price quantitative benchmark locked.",
+          "facts": [
+            {
+              "fact_id": "mw_c05_p1",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "A study of U.S. grocery stores finds that increases in the minimum wage raise retail food prices.",
+              "source_name": "Renkin, Montialoux & Siegenthaler",
+              "source_url": "https://direct.mit.edu/rest/article/104/5/890/97710/The-Pass-Through-of-Minimum-Wages-into-U-S-Retail",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Grocery/retail price pass-through evidence."
+            },
+            {
+              "fact_id": "mw_c05_p2",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "A study of McDonald's restaurants finds that increases in the minimum wage lead to higher menu prices.",
+              "source_name": "Ashenfelter & Jurajda",
+              "source_url": "https://www.nber.org/papers/w28506",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Restaurant/menu price pass-through evidence."
+            },
+            {
+              "fact_id": "mw_c05_o1",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "A study of Seattle's minimum wage increase found no detectable increase in supermarket food prices.",
+              "source_name": "Seattle minimum-wage supermarket price study",
+              "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6579531/",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Concrete local empirical counterpoint."
+            },
+            {
+              "fact_id": "mw_c05_o2",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "A review discussing recent studies of restaurant prices concludes that minimum wage increases usually raise restaurant prices, but the increases are generally small relative to the size of the wage increase.",
+              "source_name": "Upjohn Institute research summary / price pass-through literature",
+              "source_url": "https://www.upjohn.org/research-highlights/does-increasing-minimum-wage-lead-higher-prices",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Review-level magnitude counterpoint."
+            }
+          ],
+          "quantitative_questions": [
+            {
+              "question_id": "mw_c05_q",
+              "question_text": "Suppose the minimum wage were increased by 10%. Approximately what percentage would restaurant prices increase over the following several years? Click here to see the source and assumptions that will be used for benchmarking.",
+              "input_type": "numeric_text_box",
+              "units_label": "% increase in restaurant prices",
+              "allowed_min": 0,
+              "allowed_max": 20,
+              "benchmark_value": 0.36,
+              "benchmark_units": "% increase",
+              "benchmark_source": "Upjohn summary of MacDonald & Nilsson restaurant price study",
+              "benchmark_url": "https://www.upjohn.org/research-highlights/does-increasing-minimum-wage-lead-higher-prices",
+              "benchmark_assumptions": "Benchmark uses reported restaurant price pass-through for a 10% minimum wage increase.",
+              "higher_value_supports_claim": true,
+              "higher_value_supports_policy": false,
+              "status": "Locked",
+              "notes": "Internal derivation: benchmark is the reported restaurant price pass-through for a 10% minimum-wage increase: 0.36% increase.",
+              "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** Upjohn summary of the MacDonald & Nilsson restaurant price study.\n\nResearchers studied how a 10% increase in the minimum wage affected restaurant prices.\n\nThe benchmark is based on the reported restaurant price pass-through for that policy change."
+            },
+            {
+              "question_id": "mw_c05_q2",
+              "question_text": "Suppose the minimum wage were increased by 10%, Approximately what percentage would grocery prices increase over the following several years? Click here to see the source and assumptions that will be used for benchmarking.",
+              "input_type": "numeric_text_box",
+              "units_label": "% increase in grocery prices",
+              "allowed_min": 0,
+              "allowed_max": 20,
+              "benchmark_value": 0.36,
+              "benchmark_units": "% increase",
+              "benchmark_source": "Renkin, Montialoux & Siegenthaler supermarket scanner study",
+              "benchmark_url": "https://direct.mit.edu/rest/article/104/5/890/97710/The-Pass-Through-of-Minimum-Wages-into-U-S-Retail",
+              "benchmark_assumptions": "Benchmark is reported grocery price pass-through for a 10% minimum wage increase.",
+              "higher_value_supports_claim": true,
+              "higher_value_supports_policy": false,
+              "status": "Locked",
+              "notes": "Internal derivation: benchmark is the reported grocery price pass-through for a 10% minimum-wage increase: 0.36% increase.",
+              "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** Renkin, Montialoux & Siegenthaler supermarket scanner study.\n\nResearchers studied how a 10% increase in the minimum wage affected grocery prices using U.S. supermarket scanner data.\n\nThe benchmark is based on the reported grocery price pass-through for that policy change."
+            }
+          ]
+        },
+        {
+          "claim_id": "mw_c06",
+          "claim_text": "The current federal minimum wage is too low for a full-time worker to cover basic living expenses.",
+          "claim_valence_for_policy": "Pro",
+          "status": "Locked",
+          "notes": "Audited and upgraded; Davidson County benchmark locked.",
+          "facts": [
+            {
+              "fact_id": "mw_c06_p1",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "A nationwide analysis finds that a full-time worker earning the federal minimum wage cannot afford basic necessities anywhere in the United States.",
+              "source_name": "Drexel University Center for Hunger-Free Communities",
+              "source_url": "https://drexel.edu/hunger-free-center/research/briefs-and-reports/minimum-wage-is-not-enough/",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Direct adequacy evidence."
+            },
+            {
+              "fact_id": "mw_c06_p2",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "A nationwide analysis finds that a full-time worker earning the federal minimum wage cannot afford a modest one-bedroom apartment in most areas of the United States.",
+              "source_name": "National Low Income Housing Coalition, Out of Reach",
+              "source_url": "https://nlihc.org/oor",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Housing affordability evidence; replaces older demographic fact."
+            },
+            {
+              "fact_id": "mw_c06_o1",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "It is difficult to determine whether the federal minimum wage is enough to cover basic living expenses because the income needed depends heavily on factors such as household size, location, government benefits, financial support from family members, and other individual circumstances.",
+              "source_name": "MIT Living Wage Calculator methodology",
+              "source_url": "https://livingwage.mit.edu/pages/methodology",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Methodological con fact; challenges generality of living-wage claim."
+            },
+            {
+              "fact_id": "mw_c06_o2",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "Many minimum-wage workers live in households with multiple earners, so whether they can cover their basic living expenses often depends on their household's combined income rather than on the worker's own wages alone.",
+              "source_name": "Card & Krueger family-income distribution review",
+              "source_url": "https://davidcard.berkeley.edu/papers/minwage%20fam.pdf",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Household-resource counterpoint."
+            }
+          ],
+          "quantitative_questions": [
+            {
+              "question_id": "mw_c06_q",
+              "question_text": "Suppose a single adult with no children lives in Davidson County (Nashville), Tennessee, which was selected because its cost of living is similar to that of many U.S. communities. This person works full-time (40 hours per week, 52 weeks per year) earning the current federal minimum wage of $7.25 per hour. Approximately what percentage of this person's annual basic living expenses would be covered by their full-time earnings? Click here to see the source and assumptions that will be used for benchmarking.",
+              "input_type": "numeric_text_box",
+              "units_label": "% of annual basic living expenses covered",
+              "allowed_min": 0,
+              "allowed_max": 150,
+              "benchmark_value": 29,
+              "benchmark_units": "%",
+              "benchmark_source": "MIT Living Wage Calculator, Davidson County, Tennessee",
+              "benchmark_url": "https://livingwage.mit.edu/counties/47037",
+              "benchmark_assumptions": "Single adult, no children; Davidson County, Tennessee; full-time work at 40 hours/week and 52 weeks/year; federal minimum wage $7.25/hour compared to MIT living wage of $24.64/hour.",
+              "higher_value_supports_claim": false,
+              "higher_value_supports_policy": false,
+              "status": "Locked",
+              "notes": "Internal derivation: annual earnings at $7.25/hour for 40 hours/week and 52 weeks/year = $15,080; MIT living wage for Davidson County single adult/no children is $24.64/hour, or $51,251.20 annually; $15,080 / $51,251.20 = 29.4%, rounded to 29%.",
+              "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following source.\n\n**Source:** MIT Living Wage Calculator, Davidson County, Tennessee.\n\nThe MIT Living Wage Calculator estimates annual basic living expenses for different household types and locations.\n\nThe benchmark used in this study is calculated by comparing full-time annual earnings at the federal minimum wage with the estimated annual basic living expenses for a single adult with no children living in Davidson County, Tennessee."
+            }
+          ]
+        },
+        {
+          "claim_id": "mw_c07",
+          "claim_text": "Raising the minimum wage substantially increases business closures among businesses that employ many low-wage workers.",
+          "claim_valence_for_policy": "Con",
+          "status": "Locked",
+          "notes": "New fifth minimum-wage claim; business-closure benchmark locked.",
+          "facts": [
+            {
+              "fact_id": "mw_c07_p1",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "A study of Bay Area restaurants found that increases in the minimum wage increased business closures among restaurants operating with relatively small profit margins.",
+              "source_name": "Luca & Luca, The Impact of the Minimum Wage on Firm Exit",
+              "source_url": "https://www.hbs.edu/faculty/Pages/item.aspx?num=52552",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Sector-specific restaurant exit evidence."
+            },
+            {
+              "fact_id": "mw_c07_p2",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "A nationwide study examining how small-business entry and exit changed after federal minimum-wage increases found that small businesses became more likely to close and fewer new businesses were created.",
+              "source_name": "Chava, Oettl, Singh & Zeng",
+              "source_url": "https://www.nber.org/system/files/working_papers/w26523/w26523.pdf",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Nationwide small-business entry/exit evidence."
+            },
+            {
+              "fact_id": "mw_c07_o1",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "A study comparing similar small, low-wage businesses before and after Seattle's minimum-wage increase found little evidence that businesses became more likely to close.",
+              "source_name": "Forsythe / Seattle small-business study",
+              "source_url": "https://elizaforsythe.web.illinois.edu/wp-content/uploads/2023/07/Effect_of_Minimum_Wage_on_Establishments.pdf",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Careful local comparison counterpoint."
+            },
+            {
+              "fact_id": "mw_c07_o2",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "A nationwide study following independent businesses after minimum-wage increases found that many firms adapted through changes such as higher prices and improved productivity rather than closing.",
+              "source_name": "Rao, Who's Afraid of the Minimum Wage?",
+              "source_url": "https://academic.oup.com/qje/article/141/1/373/8376639",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Nationwide firm-level adaptation evidence."
+            }
+          ],
+          "quantitative_questions": [
+            {
+              "question_id": "mw_c07_q",
+              "question_text": "Suppose the minimum wage were increased by 10%, Approximately what percentage would business closures among businesses that employ many low-wage workers increase over the following several years? Click here to see the source and assumptions that will be used for benchmarking.",
+              "input_type": "numeric_text_box",
+              "units_label": "% increase in business closures",
+              "allowed_min": 0,
+              "allowed_max": 20,
+              "benchmark_value": 3.1,
+              "benchmark_units": "% increase",
+              "benchmark_source": "Chen, Ma & Orazem (2021), \"Minimum Wages and Rural and Urban Firm Entry and Exit.\"",
+              "benchmark_url": "https://agpolicyreview.card.iastate.edu/winter-2021/minimum-wages-and-rural-and-urban-firm-entry-and-exit",
+              "benchmark_assumptions": "Benchmark uses the study's directly reported estimate that a 10% real minimum-wage increase raises urban firm exit rates by 3.1%.",
+              "higher_value_supports_claim": true,
+              "higher_value_supports_policy": false,
+              "status": "Locked",
+              "notes": "Internal derivation: benchmark is the study's directly reported estimate that a 10% real minimum-wage increase raises urban firm exit rates by 3.1%.",
+              "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** Nationwide small-business entry/exit study after a 10% real minimum-wage increase.\n\nResearchers studied how a 10% real increase in the minimum wage affected firm exit rates.\n\nThe benchmark is based on the study's reported percentage increase in urban firm exit rates following that policy change."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policy_id": "carbon_pricing",
+      "policy_name": "Carbon Pricing",
+      "proposal_text": "The United States should adopt a carbon-pricing policy.",
+      "debate_summary": "A carbon-pricing policy charges for carbon dioxide emissions from fossil fuels. Supporters argue that it would reduce greenhouse-gas emissions and slow climate change. Opponents argue that it would increase energy costs and harm some industries or overall economic growth.",
+      "status": "Locked",
+      "notes": "Carbon-pricing policy module locked from working-table discussion. Includes five claims.",
+      "claims": [
+        {
+          "claim_id": "cp_c01",
+          "claim_text": "Carbon pricing substantially reduces greenhouse-gas emissions.",
+          "claim_valence_for_policy": "Pro",
+          "status": "Locked",
+          "notes": "Fifth policy-module claim set includes policy effectiveness.",
+          "facts": [
+            {
+              "fact_id": "cp_c01_p1",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "A systematic review of 80 evaluations of carbon-pricing policies around the world finds that carbon pricing usually reduces emissions.",
+              "source_name": "Nature Communications systematic review/meta-analysis (2024)",
+              "source_url": "https://www.nature.com/articles/s41467-024-48512-w",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Broad evidence synthesis."
+            },
+            {
+              "fact_id": "cp_c01_p2",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "A study of 121 countries finds that higher carbon taxes are associated with lower carbon dioxide emissions over time.",
+              "source_name": "Cross-country panel study of carbon taxes and CO₂ emissions",
+              "source_url": "https://arxiv.org/abs/2402.03800",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Large international empirical study."
+            },
+            {
+              "fact_id": "cp_c01_o1",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "A review of empirical studies concludes that existing carbon-pricing policies have often produced only modest emissions reductions because prices were usually low and coverage was limited.",
+              "source_name": "Review of empirical ex post evidence on carbon pricing and technological change",
+              "source_url": "https://arxiv.org/abs/2202.11507",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Challenges depth/durability of emissions reductions rather than direction."
+            },
+            {
+              "fact_id": "cp_c01_o2",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "A review of evidence from 19 carbon taxes concludes that the emissions reductions from carbon taxes have generally been small under the carbon prices actually used.",
+              "source_name": "ACEEE review of 19 carbon taxes",
+              "source_url": "https://www.aceee.org/files/proceedings/2016/data/papers/9_49.pdf",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Challenges magnitude under real-world carbon tax levels."
+            }
+          ],
+          "quantitative_questions": [
+            {
+              "question_id": "cp_c01_q",
+              "question_text": "In evaluations of real-world carbon-pricing policies, approximately what percentage reduction in greenhouse-gas emissions does carbon pricing typically produce? Click here to see the source and assumptions that will be used for benchmarking.",
+              "input_type": "numeric_text_box",
+              "units_label": "% reduction in greenhouse-gas emissions",
+              "allowed_min": 0,
+              "allowed_max": 100,
+              "benchmark_value": 10,
+              "benchmark_units": "% reduction",
+              "benchmark_source": "Nature Communications systematic review/meta-analysis (2024)",
+              "benchmark_url": "https://www.nature.com/articles/s41467-024-48512-w",
+              "benchmark_assumptions": "Benchmark uses the review's central estimate that real-world carbon-pricing policies typically reduce emissions by about 10%, with estimates varying across policies and study designs.",
+              "higher_value_supports_claim": true,
+              "higher_value_supports_policy": true,
+              "status": "Locked; reconstructed from locked source discussion",
+              "notes": "Internal derivation: benchmark is the review's central estimate that real-world carbon-pricing policies typically reduce emissions by about 10%.",
+              "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** Nature Communications systematic review/meta-analysis (2024).\n\nResearchers reviewed evaluations of real-world carbon-pricing policies across multiple settings.\n\nThe benchmark is based on the review's central estimate of the typical percentage reduction in greenhouse-gas emissions associated with carbon pricing."
+            }
+          ]
+        },
+        {
+          "claim_id": "cp_c02",
+          "claim_text": "Greenhouse-gas emissions are causing substantial environmental and economic harm.",
+          "claim_valence_for_policy": "Pro",
+          "status": "Locked",
+          "notes": "Need-for-policy claim; benchmark uses Burke, Hsiang & Miguel global GDP projection.",
+          "facts": [
+            {
+              "fact_id": "cp_c02_p1",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "The IPCC concludes that climate change has already caused widespread harm to ecosystems, people, settlements, and infrastructure.",
+              "source_name": "IPCC AR6 Synthesis Report / Working Group II",
+              "source_url": "https://www.ipcc.ch/report/ar6/syr/",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Observed harms."
+            },
+            {
+              "fact_id": "cp_c02_p2",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "A global study projects that continued climate change would cause large increases in heat-related mortality, with the greatest impacts occurring in hotter and lower-income regions.",
+              "source_name": "Carleton et al., Quarterly Journal of Economics",
+              "source_url": "https://academic.oup.com/qje/article/137/4/2037/6571943",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Projected mortality harms."
+            },
+            {
+              "fact_id": "cp_c02_o1",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "A review of research concludes that people, businesses, and governments adapt to changing climate conditions in many ways, reducing many of the projected economic impacts of climate change.",
+              "source_name": "Review of empirical climate-adaptation literature",
+              "source_url": "https://arxiv.org/abs/2411.16893",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Adaptation reduces realized damages."
+            },
+            {
+              "fact_id": "cp_c02_o2",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "A review of economic studies concludes that estimates of future climate damages vary widely across models because they rely on different assumptions about adaptation, technological change, and how climate change affects economic activity.",
+              "source_name": "NGFS damage-function review / National Academies damage-function literature",
+              "source_url": "https://www.ngfs.net/system/files/import/ngfs/media/2024/11/05/ngfs_scenarios_explanatory_note_on_damage_functions.pdf",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Challenges precision/magnitude of damage estimates."
+            }
+          ],
+          "quantitative_questions": [
+            {
+              "question_id": "cp_c02_q",
+              "question_text": "Suppose greenhouse-gas emissions continue at roughly current levels through 2050. By approximately what percentage do you think climate change would reduce the size of the global economy by 2050? Click here to see the source and assumptions that will be used for benchmarking.",
+              "input_type": "numeric_text_box",
+              "units_label": "% smaller global economy in 2050",
+              "allowed_min": 0,
+              "allowed_max": 100,
+              "benchmark_value": 17,
+              "benchmark_units": "% smaller",
+              "benchmark_source": "Kotz, Wenz & Levermann (2025), revised analysis, Potsdam Institute for Climate Impact Research",
+              "benchmark_url": "https://www.pik-potsdam.de/en/news/latest-news/nature-study-on-economic-damages-from-climate-change-revised",
+              "benchmark_assumptions": "Greenhouse-gas emissions continue at roughly current levels through 2050; benchmark uses the authors' revised analysis of projected global economic damages by mid-century.",
+              "higher_value_supports_claim": true,
+              "higher_value_supports_policy": true,
+              "status": "Locked",
+              "notes": "Internal derivation: benchmark updated from the retracted 2024 Nature article's 19% estimate to the authors' official revised analysis estimating a 17% reduction in global economic output by mid-century. Original 2024 Nature paper was retracted; revised analysis was posted by the Potsdam Institute for Climate Impact Research and is pending peer review.",
+              "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** Kotz, Wenz & Levermann (2025), revised analysis posted by the Potsdam Institute for Climate Impact Research.\n\nThe researchers analyzed how continued climate change would affect global economic output by mid-century.\n\nThe benchmark is based on the revised analysis of the projected percentage reduction in global economic output by 2050."
+            },
+            {
+              "question_id": "cp_c02_q2",
+              "question_text": "If greenhouse-gas emissions continue at roughly current levels through 2050, approximately how many inches do you think global sea level will rise by 2050? Click here to see the source and assumptions that will be used for benchmarking.",
+              "input_type": "numeric_text_box",
+              "units_label": "inches of global sea-level rise by 2050",
+              "allowed_min": 0,
+              "allowed_max": 120,
+              "benchmark_value": 10,
+              "benchmark_units": "inches",
+              "benchmark_source": "IPCC AR6",
+              "benchmark_url": "https://www.ipcc.ch/report/ar6/syr/",
+              "benchmark_assumptions": "Greenhouse-gas emissions continue at roughly current levels through 2050.",
+              "higher_value_supports_claim": true,
+              "higher_value_supports_policy": true,
+              "status": "Locked",
+              "notes": "Internal derivation: benchmark is IPCC AR6's approximate 2050 global mean sea-level rise projection converted to inches; 0.25 meters × 39.37 = 9.84 inches, rounded to 10 inches.",
+              "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** IPCC AR6.\n\nThe Intergovernmental Panel on Climate Change projected global sea-level rise under future greenhouse-gas emissions scenarios.\n\nThe benchmark is based on the projected rise in global mean sea level by 2050 under a scenario in which greenhouse-gas emissions continue at roughly current levels, converted into inches."
+            }
+          ]
+        },
+        {
+          "claim_id": "cp_c03",
+          "claim_text": "Carbon pricing places a substantial financial burden on households by increasing their energy costs.",
+          "claim_valence_for_policy": "Con",
+          "status": "Locked",
+          "notes": "Household cost claim; benchmark uses Columbia/Rhodium modeling.",
+          "facts": [
+            {
+              "fact_id": "cp_c03_p1",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "A review of carbon-pricing policies concludes that businesses typically pass much of the cost of carbon pricing on to consumers through higher prices for gasoline, electricity, and other energy sources.",
+              "source_name": "MIT Climate Portal",
+              "source_url": "https://climate.mit.edu/ask-mit/will-companies-pass-cost-carbon-tax-consumers",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "General pass-through mechanism."
+            },
+            {
+              "fact_id": "cp_c03_p2",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "Studies of British Columbia's carbon tax find that much of the tax was passed on to consumers through higher gasoline prices.",
+              "source_name": "British Columbia carbon-tax pass-through studies",
+              "source_url": "https://onlinelibrary.wiley.com/doi/10.1111/caje.12674",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Concrete gasoline pass-through example."
+            },
+            {
+              "fact_id": "cp_c03_o1",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "Analyses of proposed carbon-pricing policies conclude that although household energy costs increase, the overall financial impact on most households is generally modest.",
+              "source_name": "Carbon-pricing household impact analyses",
+              "source_url": "https://www.cbo.gov/sites/default/files/cbofiles/attachments/11-13LowIncomeOptions.pdf",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Challenges substantiality of household burden; source URL should receive final source-url audit."
+            },
+            {
+              "fact_id": "cp_c03_o2",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "A review of household impacts concludes that the direct increase in energy costs from many proposed carbon-pricing policies amounts to only a small percentage of household income.",
+              "source_name": "Household incidence / distributional review",
+              "source_url": "https://www.cbo.gov/publication/44223",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Direct household burden relative to income."
+            }
+          ],
+          "quantitative_questions": [
+            {
+              "question_id": "cp_c03_q",
+              "question_text": "Suppose the United States adopted a carbon-pricing policy that increased gasoline prices by about 45 cents per gallon. Approximately what percentage would the average household's annual energy costs increase? Click here to see the source and assumptions that will be used for benchmarking.",
+              "input_type": "numeric_text_box",
+              "units_label": "% increase in annual household energy costs",
+              "allowed_min": 0,
+              "allowed_max": 100,
+              "benchmark_value": 21,
+              "benchmark_units": "% increase",
+              "benchmark_source": "Columbia/Rhodium carbon-tax modeling summary",
+              "benchmark_url": "https://www.aspeninstitute.org/wp-content/uploads/2018/07/Gordon_CTax_SummaryOfCarbonTaxModeling_CGEP_071218.pdf",
+              "benchmark_assumptions": "Policy approximately equivalent to a $50/ton CO₂-equivalent carbon price, described to participants as about a 45-cent increase in gasoline prices.",
+              "higher_value_supports_claim": true,
+              "higher_value_supports_policy": false,
+              "status": "Locked",
+              "notes": "Internal derivation: benchmark is the projected average household annual energy-cost increase under a policy approximately equivalent to a $50/tCO2 carbon price, described to participants as about a 45-cent-per-gallon gasoline-price increase: 21%.",
+              "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** Columbia/Rhodium carbon-tax modeling summary.\n\nResearchers modeled household energy-cost effects of a carbon-pricing policy approximately equivalent to a $50 per metric ton carbon price.\n\nThe benchmark is based on the projected percentage increase in the average household's annual energy costs under that policy."
+            }
+          ]
+        },
+        {
+          "claim_id": "cp_c04",
+          "claim_text": "Carbon pricing imposes substantial economic costs on firms and workers, especially in carbon-intensive industries such as steel, cement, chemicals, and petroleum refining.",
+          "claim_valence_for_policy": "Con",
+          "status": "Locked",
+          "notes": "Industry-performance claim revised to use concrete industry examples; benchmark uses composite RFF production measure.",
+          "facts": [
+            {
+              "fact_id": "cp_c04_p1",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "A study of carbon-pricing policies finds that carbon-intensive industries experience declines in employment after carbon pricing is introduced.",
+              "source_name": "Carbon-pricing employment study / sectoral evidence",
+              "source_url": "https://researchrepository.ilo.org/view/pdfCoverPage?download=true&filePid=13135639210002676&instCode=41ILO_INST",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Employment channel in carbon-intensive industries; source URL should receive final source-url audit."
+            },
+            {
+              "fact_id": "cp_c04_p2",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "A study of European firms finds that higher carbon prices reduced investment and sales among many carbon-intensive firms.",
+              "source_name": "ECB working paper on carbon prices and firm investment",
+              "source_url": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2958~0002545c73.en.pdf",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Investment/sales channel in affected firms."
+            },
+            {
+              "fact_id": "cp_c04_o1",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "A review of research concludes that although carbon pricing reduces employment in some carbon-intensive industries, it primarily reallocates workers to other sectors, resulting in relatively small effects on overall employment.",
+              "source_name": "Resources for the Future employment explainer",
+              "source_url": "https://www.rff.org/publications/explainers/carbon-pricing-106-effects-employment/",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Worker reallocation rather than aggregate job destruction."
+            },
+            {
+              "fact_id": "cp_c04_o2",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "A review of empirical studies concludes that carbon pricing has generally had little effect on the competitiveness of firms in most carbon-intensive industries, and when measurable effects are found, they are usually small.",
+              "source_name": "OECD review: Carbon Pricing and Competitiveness",
+              "source_url": "https://one.oecd.org/document/ENV/WKP(2019)11/En/pdf",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Competitiveness of firms in carbon-intensive industries."
+            }
+          ],
+          "quantitative_questions": [
+            {
+              "question_id": "cp_c04_q1",
+              "question_text": "Suppose the United States adopted a carbon-pricing policy that increased gasoline prices by about 9 cents per gallon. Across carbon-intensive industries such as steel, cement, chemicals, and petroleum refining, by about what percentage do you think production would fall over the following five years? Click here to see the source and assumptions that will be used for benchmarking.",
+              "input_type": "numeric_text_box",
+              "units_label": "% decline in production across carbon-intensive industries",
+              "allowed_min": 0,
+              "allowed_max": 100,
+              "benchmark_value": 1.1,
+              "benchmark_units": "% decline",
+              "benchmark_source": "RFF composite across carbon-intensive industries",
+              "benchmark_url": "https://www.rff.org/documents/1552/RFF-DP-08-37.pdf",
+              "benchmark_assumptions": "Simple arithmetic mean of projected production declines across selected carbon-intensive industries under ~$10/tCO2.",
+              "higher_value_supports_claim": true,
+              "higher_value_supports_policy": false,
+              "status": "Locked",
+              "notes": "Internal derivation: benchmark is the simple arithmetic mean of projected production/output declines across selected carbon-intensive industries under an approximately $10/tCO2 policy: 1.1% decline.",
+              "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** Resources for the Future industry modeling.\n\nResearchers modeled the effects of a carbon price on production across carbon-intensive industries.\n\nThe benchmark used in this study is calculated by standardizing the reported production changes for each industry and averaging them to produce a single benchmark representing the typical effect across the industries included in the analysis."
+            }
+          ]
+        },
+        {
+          "claim_id": "cp_c05",
+          "claim_text": "Carbon pricing substantially reduces long-run economic growth.",
+          "claim_valence_for_policy": "Con",
+          "status": "Locked",
+          "notes": "Aggregate GDP-growth claim; added after carbon module review.",
+          "facts": [
+            {
+              "fact_id": "cp_c05_p1",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "A review of economic models concludes that carbon pricing reduces long-run GDP relative to a world without carbon pricing.",
+              "source_name": "IMF review of carbon-pricing macroeconomic models",
+              "source_url": "https://www.elibrary.imf.org/display/book/9798400250286/CH001.xml",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Model-based GDP effect."
+            },
+            {
+              "fact_id": "cp_c05_p2",
+              "side_relative_to_claim": "Supports claim",
+              "fact_relation_to_policy": "Opposes policy",
+              "fact_text": "A study of the European Union's Emissions Trading System finds that higher carbon prices were associated with lower GDP.",
+              "source_name": "Empirical analysis of EU ETS macroeconomic effects",
+              "source_url": "https://cepr.org/voxeu/columns/economic-effects-carbon-pricing",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Empirical GDP effect."
+            },
+            {
+              "fact_id": "cp_c05_o1",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "A study of European carbon taxes finds no evidence that carbon pricing reduced countries' economic growth over the following decade.",
+              "source_name": "Metcalf & Stock",
+              "source_url": "https://ceepr.mit.edu/wp-content/uploads/2023/01/MIT-CEEPR-WP-2023-02.pdf",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Empirical carbon-tax evidence."
+            },
+            {
+              "fact_id": "cp_c05_o2",
+              "side_relative_to_claim": "Opposes claim",
+              "fact_relation_to_policy": "Supports policy",
+              "fact_text": "A review of economic models concludes that moderate carbon-pricing policies generally have only small effects on long-run economic growth.",
+              "source_name": "IMF review of carbon-pricing macroeconomic models",
+              "source_url": "https://www.elibrary.imf.org/display/book/9798400250286/CH001.xml",
+              "source_fit_verified": true,
+              "status": "Locked",
+              "notes": "Challenges magnitude of modeled GDP effects."
+            }
+          ],
+          "quantitative_questions": [
+            {
+              "question_id": "cp_c05_q",
+              "question_text": "Suppose the United States adopted a carbon-pricing policy that increased gasoline prices by about 45 cents per gallon. Approximately what percentage smaller would U.S. GDP be by 2050? Click here to see the source and assumptions that will be used for benchmarking.",
+              "input_type": "numeric_text_box",
+              "units_label": "% smaller U.S. GDP by 2050",
+              "allowed_min": 0,
+              "allowed_max": 100,
+              "benchmark_value": 0.7,
+              "benchmark_units": "% smaller GDP",
+              "benchmark_source": "IMF review of carbon-pricing macroeconomic models",
+              "benchmark_url": "https://www.elibrary.imf.org/display/book/9798400250286/CH001.xml",
+              "benchmark_assumptions": "Carbon price approximately equivalent to $50 per metric ton CO₂, roughly a 45-cent-per-gallon gasoline-price increase; long-run GDP relative to a comparable world without the carbon-pricing policy.",
+              "higher_value_supports_claim": true,
+              "higher_value_supports_policy": false,
+              "status": "Locked",
+              "notes": "Internal derivation: benchmark is the IMF-reviewed model estimate that a $50/tCO2-equivalent carbon price reduces U.S. GDP by about 0.7% by 2050.",
+              "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** IMF review of carbon-pricing macroeconomic models.\n\nResearchers reviewed model-based estimates of the long-run economic effects of carbon pricing.\n\nThe benchmark is based on the projected percentage reduction in U.S. GDP by 2050 under a carbon-pricing policy approximately equivalent to $50 per metric ton of carbon dioxide."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Exact environment used for the successful 182/182 main-text validation and
+# all six SI runs on Python 3.13.5. Use this for final archival validation.
+matplotlib==3.10.3
+numpy==2.3.0
+pandas==2.3.0
+patsy==1.0.1
+pyarrow==20.0.0
+scipy==1.15.3
+statsmodels==0.14.4

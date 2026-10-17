@@ -1,0 +1,33 @@
+metric,field,comparison,target,tolerance
+sample:N,value,equal,50,0
+raw_estimate:Tallest visible vs Random at 5 hidden,value,equal,2.17,0.01
+raw_estimate:Tallest visible vs Random at 5 hidden,se,equal,1.08,0.01
+raw_estimate:Tallest visible vs Random at 5 hidden,p,equal,0.022,0.0006
+raw_estimate:Shortest visible vs Random at 5 hidden,value,equal,-2.43,0.01
+raw_estimate:Shortest visible vs Random at 5 hidden,se,equal,0.92,0.01
+raw_estimate:Shortest visible vs Random at 5 hidden,p,equal,0.004,0.0006
+raw_estimate:Tallest-visible difference slope per hidden stick,value,equal,0.87,0.01
+raw_estimate:Tallest-visible difference slope per hidden stick,se,equal,0.31,0.01
+raw_estimate:Tallest-visible difference slope per hidden stick,p,equal,0.002,0.0006
+raw_estimate:Shortest-visible difference slope per hidden stick,value,equal,-0.18,0.01
+raw_estimate:Shortest-visible difference slope per hidden stick,se,equal,0.32,0.01
+raw_estimate:Shortest-visible difference slope per hidden stick,p,equal,0.283,0.0006
+adjustment_visible:adjustment_visible:Tallest visible:level_at_5_hidden,value,equal,-21.5,0.06
+adjustment_visible:adjustment_visible:Shortest visible:level_at_5_hidden,value,equal,18.7,0.06
+adjustment_visible:adjustment_visible:Tallest visible:slope_per_hidden_stick,value,equal,-3.76,0.01
+adjustment_visible:adjustment_visible:Tallest visible:slope_per_hidden_stick,p,less_than,0.001,0
+adjustment_visible:adjustment_visible:Shortest visible:slope_per_hidden_stick,value,equal,4.05,0.01
+adjustment_visible:adjustment_visible:Shortest visible:slope_per_hidden_stick,p,less_than,0.001,0
+deviation_bayes:deviation_bayes:Shortest visible:level_at_5_hidden,value,equal,-4.04,0.01
+deviation_bayes:deviation_bayes:Shortest visible:level_at_5_hidden,p,equal,0.009,0.0006
+deviation_bayes:deviation_bayes:Shortest visible:slope_per_hidden_stick,value,equal,-0.50,0.01
+deviation_bayes:deviation_bayes:Shortest visible:slope_per_hidden_stick,p,equal,0.033,0.0006
+deviation_bayes:deviation_bayes:Tallest visible:slope_per_hidden_stick,value,equal,0.65,0.01
+deviation_bayes:deviation_bayes:Tallest visible:slope_per_hidden_stick,p,equal,0.009,0.0006
+proportional adjustment:lambda:Pooled selective conditions,value,equal,0.891,0.0006
+proportional adjustment:lambda:Pooled selective conditions,se,equal,0.026,0.0006
+proportional adjustment:lambda:Pooled selective conditions,p,less_than,0.001,0
+proportional adjustment:lambda:Tallest visible,value,equal,0.872,0.0006
+proportional adjustment:lambda:Tallest visible,p,equal,0.011,0.0006
+proportional adjustment:lambda:Shortest visible,value,equal,0.897,0.0006
+proportional adjustment:lambda:Shortest visible,p,equal,0.035,0.0006

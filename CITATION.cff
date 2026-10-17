@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use these data, materials, or code, please cite the accompanying manuscript."
+title: "Reproduction materials for A Cognitive Account of Advocacy Bias"
+type: dataset
+version: 0.1.0
+authors:
+  - family-names: Hoffman
+    given-names: Moshe
+    affiliation: Independent Researcher, Boston, MA, USA
+    email: hoffman.moshe@gmail.com
+  - family-names: Russek
+    given-names: Evan
+    affiliation: Hunter College, City University of New York, New York, NY, USA
+  - family-names: Griffiths
+    given-names: Tom
+    affiliation: Princeton University, Princeton, NJ, USA
+preferred-citation:
+  type: article
+  title: "A Cognitive Account of Advocacy Bias"
+  authors:
+    - family-names: Hoffman
+      given-names: Moshe
+    - family-names: Russek
+      given-names: Evan
+    - family-names: Griffiths
+      given-names: Tom

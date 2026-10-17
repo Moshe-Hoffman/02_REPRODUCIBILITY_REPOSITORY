@@ -1,0 +1,29 @@
+metric,field,comparison,target,tolerance
+sample:N,value,equal,116,0
+block-by-rule lambda:B1 × Only High,value,equal,0.286,0.0006
+block-by-rule lambda:B1 × Only High,p,less_than,0.001,0
+block-by-rule lambda:B1 × Only Low,value,equal,0.358,0.0006
+block-by-rule lambda:B1 × Only Low,p,less_than,0.001,0
+block-by-rule lambda:B2 × Only High,value,equal,0.428,0.0006
+block-by-rule lambda:B2 × Only High,p,less_than,0.001,0
+block-by-rule lambda:B2 × Only Low,value,equal,0.396,0.0006
+block-by-rule lambda:B2 × Only Low,p,less_than,0.001,0
+block-by-rule lambda:B3 × Only High,value,equal,0.407,0.0006
+block-by-rule lambda:B3 × Only High,p,less_than,0.001,0
+block-by-rule lambda:B3 × Only Low,value,equal,0.415,0.0006
+block-by-rule lambda:B3 × Only Low,p,less_than,0.001,0
+pooled lambda:pooled lambda,value,equal,0.369,0.0006
+pooled lambda:pooled lambda,se,equal,0.044,0.0006
+pooled lambda:pooled lambda,p,less_than,0.001,0
+judgment ordering:Only High − Random Drop,value,equal,0.117,0.0006
+judgment ordering:Only High − Random Drop,se,equal,0.017,0.0006
+judgment ordering:Only High − Random Drop,p,less_than,0.001,0
+judgment ordering:Only Low − Random Drop,value,equal,-0.144,0.0006
+judgment ordering:Only Low − Random Drop,se,equal,0.017,0.0006
+judgment ordering:Only Low − Random Drop,p,less_than,0.001,0
+absolute deviation from Bayesian benchmark:Only High − Random Drop,value,equal,0.065,0.0006
+absolute deviation from Bayesian benchmark:Only High − Random Drop,se,equal,0.010,0.0006
+absolute deviation from Bayesian benchmark:Only High − Random Drop,p,less_than,0.001,0
+absolute deviation from Bayesian benchmark:Only Low − Random Drop,value,equal,0.076,0.0006
+absolute deviation from Bayesian benchmark:Only Low − Random Drop,se,equal,0.011,0.0006
+absolute deviation from Bayesian benchmark:Only Low − Random Drop,p,less_than,0.001,0
