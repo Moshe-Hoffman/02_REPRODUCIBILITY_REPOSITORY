@@ -74,7 +74,7 @@ logging.getLogger("statsmodels").setLevel(logging.ERROR)
 
 
 # ---------------------------------------------------------------------
-# 1. Settings locked before analysis
+# 1. Analysis settings
 # ---------------------------------------------------------------------
 
 EXPECTED_FILENAME = "spin_task_july8 2.parquet"
@@ -90,8 +90,7 @@ LOW_ENDPOINT = 1.0
 HIGH_ENDPOINT = 100.0
 TOTAL_STICKS = 10
 
-# Number hidden is used for model parameterization and figures for direct
-# comparison with the older analysis. The midpoint is 5.
+# Number hidden is used for model parameterization and figures. The midpoint is 5.
 HIDDEN_CENTER = 5.0
 
 CONDITION_ORDER = [

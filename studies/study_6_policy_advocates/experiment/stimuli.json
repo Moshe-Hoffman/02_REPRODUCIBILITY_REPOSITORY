@@ -1,7 +1,5 @@
 {
   "schema_version": "policy_advocacy_stimuli_v1",
-  "source_workbook": "june30th_post_validation_stimuli.xlsx",
-  "generated_note": "Converted from normalized workbook tables: Policies, Claims, Facts, Quantitative_Questions.",
   "policies": [
     {
       "policy_id": "min_wage",
@@ -9,14 +7,14 @@
       "proposal_text": "The minimum wage should be increased.",
       "debate_summary": "Supporters argue that raising the minimum wage would reduce financial hardship for low-wage workers. Opponents argue that it could reduce employment, raise consumer prices, and increase business closures among low-wage employers.",
       "status": "Locked",
-      "notes": "Minimum-wage policy module locked after audit; includes five claims.",
+      "notes": "Minimum-wage policy module with five claims.",
       "claims": [
         {
           "claim_id": "mw_c01",
           "claim_text": "Raising the minimum wage causes substantial job losses among low-wage workers.",
           "claim_valence_for_policy": "Con",
           "status": "Locked",
-          "notes": "Audited; quant benchmark based on CBO $7.25 to $9.00 proposal.",
+          "notes": "Quantitative benchmark based on the CBO minimum-wage proposal.",
           "facts": [
             {
               "fact_id": "mw_c01_p1",
@@ -79,7 +77,7 @@
               "higher_value_supports_claim": true,
               "higher_value_supports_policy": false,
               "status": "Locked",
-              "notes": "Internal derivation: 1.4 million projected reduction in employment divided by 27 million workers projected to receive higher wages = 5.2% of workers becoming unemployed. The denominator is 17 million directly affected workers plus 10 million indirectly affected workers.",
+              "notes": "Benchmark derivation: 1.4 million projected reduction in employment divided by 27 million workers projected to receive higher wages = 5.2% of workers becoming unemployed. The denominator is 17 million directly affected workers plus 10 million indirectly affected workers.",
               "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** Congressional Budget Office (2021), The Budgetary Effects of the Raise the Wage Act of 2021.\n\nThe Congressional Budget Office analyzed a proposal to gradually increase the federal minimum wage to $15.00 per hour.\n\nThe Congressional Budget Office projected both the reduction in employment and the number of low-wage workers whose wages would increase because of the policy. The benchmark used in this study is calculated by dividing the projected reduction in employment by the total number of low-wage workers whose wages were projected to increase."
             }
           ]
@@ -89,7 +87,7 @@
           "claim_text": "Raising the minimum wage meaningfully reduces poverty and financial hardship among low-income households.",
           "claim_valence_for_policy": "Pro",
           "status": "Locked",
-          "notes": "Audited and upgraded to four fact cards; added CBO poverty-projection pro fact.",
+          "notes": "Poverty and family-income claim with four fact cards.",
           "facts": [
             {
               "fact_id": "mw_c04_p1",
@@ -111,7 +109,7 @@
               "source_url": "https://www.cbo.gov/publication/44995",
               "source_fit_verified": true,
               "status": "Locked",
-              "notes": "New pro fact added during audit; policy projection source."
+              "notes": "Policy projection source."
             },
             {
               "fact_id": "mw_c04_o1",
@@ -133,7 +131,7 @@
               "source_url": "https://www.nber.org/system/files/working_papers/w31182/w31182.pdf",
               "source_fit_verified": true,
               "status": "Locked",
-              "notes": "Source URL should receive final source-url audit before deployment."
+              "notes": "Long-run poverty evidence."
             }
           ],
           "quantitative_questions": [
@@ -152,7 +150,7 @@
               "higher_value_supports_claim": true,
               "higher_value_supports_policy": true,
               "status": "Locked",
-              "notes": "Internal derivation: 0.9 million projected reduction in the number of people in poverty divided by 37.2 million people living in poverty in the United States around the time of the analysis = 2.4%.",
+              "notes": "Benchmark derivation: 0.9 million projected reduction in the number of people in poverty divided by 37.2 million people living in poverty in the United States around the time of the analysis = 2.4%.",
               "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** Congressional Budget Office (2021), The Budgetary Effects of the Raise the Wage Act of 2021.\n\nThe Congressional Budget Office analyzed a proposal to gradually increase the federal minimum wage to $15.00 per hour.\n\nThe Congressional Budget Office projected how many people would be lifted out of poverty under that proposal. The benchmark used in this study is calculated by dividing that projection by the estimated number of people living in poverty at the time of the analysis."
             },
             {
@@ -170,7 +168,7 @@
               "higher_value_supports_claim": true,
               "higher_value_supports_policy": true,
               "status": "Locked",
-              "notes": "Internal derivation: benchmark is the reported 1.5 percentage-point reduction in food insufficiency among workers whose wages increase following a $1 minimum-wage increase; expressed as 1.5 fewer workers out of every 100.",
+              "notes": "Benchmark derivation: benchmark is the reported 1.5 percentage-point reduction in food insufficiency among workers whose wages increase following a $1 minimum-wage increase; expressed as 1.5 fewer workers out of every 100.",
               "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** IZA discussion paper on minimum wage and food insufficiency.\n\nResearchers studied the effects of a $1.00 increase in the minimum wage on workers whose wages would increase because of the policy.\n\nThe benchmark is based on the estimated reduction in the share of those workers who would no longer struggle to afford enough food following the policy change."
             }
           ]
@@ -180,7 +178,7 @@
           "claim_text": "Increasing the minimum wage substantially increases consumer prices.",
           "claim_valence_for_policy": "Con",
           "status": "Locked",
-          "notes": "Consumer-prices claim revised after audit; restaurant-price quantitative benchmark locked.",
+          "notes": "Consumer-prices claim with a restaurant-price quantitative benchmark.",
           "facts": [
             {
               "fact_id": "mw_c05_p1",
@@ -243,7 +241,7 @@
               "higher_value_supports_claim": true,
               "higher_value_supports_policy": false,
               "status": "Locked",
-              "notes": "Internal derivation: benchmark is the reported restaurant price pass-through for a 10% minimum-wage increase: 0.36% increase.",
+              "notes": "Benchmark derivation: benchmark is the reported restaurant price pass-through for a 10% minimum-wage increase: 0.36% increase.",
               "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** Upjohn summary of the MacDonald & Nilsson restaurant price study.\n\nResearchers studied how a 10% increase in the minimum wage affected restaurant prices.\n\nThe benchmark is based on the reported restaurant price pass-through for that policy change."
             },
             {
@@ -261,7 +259,7 @@
               "higher_value_supports_claim": true,
               "higher_value_supports_policy": false,
               "status": "Locked",
-              "notes": "Internal derivation: benchmark is the reported grocery price pass-through for a 10% minimum-wage increase: 0.36% increase.",
+              "notes": "Benchmark derivation: benchmark is the reported grocery price pass-through for a 10% minimum-wage increase: 0.36% increase.",
               "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** Renkin, Montialoux & Siegenthaler supermarket scanner study.\n\nResearchers studied how a 10% increase in the minimum wage affected grocery prices using U.S. supermarket scanner data.\n\nThe benchmark is based on the reported grocery price pass-through for that policy change."
             }
           ]
@@ -271,7 +269,7 @@
           "claim_text": "The current federal minimum wage is too low for a full-time worker to cover basic living expenses.",
           "claim_valence_for_policy": "Pro",
           "status": "Locked",
-          "notes": "Audited and upgraded; Davidson County benchmark locked.",
+          "notes": "Living-expenses claim with a Davidson County quantitative benchmark.",
           "facts": [
             {
               "fact_id": "mw_c06_p1",
@@ -293,7 +291,7 @@
               "source_url": "https://nlihc.org/oor",
               "source_fit_verified": true,
               "status": "Locked",
-              "notes": "Housing affordability evidence; replaces older demographic fact."
+              "notes": "Housing affordability evidence."
             },
             {
               "fact_id": "mw_c06_o1",
@@ -334,7 +332,7 @@
               "higher_value_supports_claim": false,
               "higher_value_supports_policy": false,
               "status": "Locked",
-              "notes": "Internal derivation: annual earnings at $7.25/hour for 40 hours/week and 52 weeks/year = $15,080; MIT living wage for Davidson County single adult/no children is $24.64/hour, or $51,251.20 annually; $15,080 / $51,251.20 = 29.4%, rounded to 29%.",
+              "notes": "Benchmark derivation: annual earnings at $7.25/hour for 40 hours/week and 52 weeks/year = $15,080; MIT living wage for Davidson County single adult/no children is $24.64/hour, or $51,251.20 annually; $15,080 / $51,251.20 = 29.4%, rounded to 29%.",
               "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following source.\n\n**Source:** MIT Living Wage Calculator, Davidson County, Tennessee.\n\nThe MIT Living Wage Calculator estimates annual basic living expenses for different household types and locations.\n\nThe benchmark used in this study is calculated by comparing full-time annual earnings at the federal minimum wage with the estimated annual basic living expenses for a single adult with no children living in Davidson County, Tennessee."
             }
           ]
@@ -344,7 +342,7 @@
           "claim_text": "Raising the minimum wage substantially increases business closures among businesses that employ many low-wage workers.",
           "claim_valence_for_policy": "Con",
           "status": "Locked",
-          "notes": "New fifth minimum-wage claim; business-closure benchmark locked.",
+          "notes": "Business-closure claim with a quantitative benchmark.",
           "facts": [
             {
               "fact_id": "mw_c07_p1",
@@ -407,7 +405,7 @@
               "higher_value_supports_claim": true,
               "higher_value_supports_policy": false,
               "status": "Locked",
-              "notes": "Internal derivation: benchmark is the study's directly reported estimate that a 10% real minimum-wage increase raises urban firm exit rates by 3.1%.",
+              "notes": "Benchmark derivation: benchmark is the study's directly reported estimate that a 10% real minimum-wage increase raises urban firm exit rates by 3.1%.",
               "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** Nationwide small-business entry/exit study after a 10% real minimum-wage increase.\n\nResearchers studied how a 10% real increase in the minimum wage affected firm exit rates.\n\nThe benchmark is based on the study's reported percentage increase in urban firm exit rates following that policy change."
             }
           ]
@@ -420,14 +418,14 @@
       "proposal_text": "The United States should adopt a carbon-pricing policy.",
       "debate_summary": "A carbon-pricing policy charges for carbon dioxide emissions from fossil fuels. Supporters argue that it would reduce greenhouse-gas emissions and slow climate change. Opponents argue that it would increase energy costs and harm some industries or overall economic growth.",
       "status": "Locked",
-      "notes": "Carbon-pricing policy module locked from working-table discussion. Includes five claims.",
+      "notes": "Carbon-pricing policy module with five claims.",
       "claims": [
         {
           "claim_id": "cp_c01",
           "claim_text": "Carbon pricing substantially reduces greenhouse-gas emissions.",
           "claim_valence_for_policy": "Pro",
           "status": "Locked",
-          "notes": "Fifth policy-module claim set includes policy effectiveness.",
+          "notes": "Policy-effectiveness claim.",
           "facts": [
             {
               "fact_id": "cp_c01_p1",
@@ -490,7 +488,7 @@
               "higher_value_supports_claim": true,
               "higher_value_supports_policy": true,
               "status": "Locked; reconstructed from locked source discussion",
-              "notes": "Internal derivation: benchmark is the review's central estimate that real-world carbon-pricing policies typically reduce emissions by about 10%.",
+              "notes": "Benchmark derivation: benchmark is the review's central estimate that real-world carbon-pricing policies typically reduce emissions by about 10%.",
               "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** Nature Communications systematic review/meta-analysis (2024).\n\nResearchers reviewed evaluations of real-world carbon-pricing policies across multiple settings.\n\nThe benchmark is based on the review's central estimate of the typical percentage reduction in greenhouse-gas emissions associated with carbon pricing."
             }
           ]
@@ -563,7 +561,7 @@
               "higher_value_supports_claim": true,
               "higher_value_supports_policy": true,
               "status": "Locked",
-              "notes": "Internal derivation: benchmark updated from the retracted 2024 Nature article's 19% estimate to the authors' official revised analysis estimating a 17% reduction in global economic output by mid-century. Original 2024 Nature paper was retracted; revised analysis was posted by the Potsdam Institute for Climate Impact Research and is pending peer review.",
+              "notes": "Benchmark derivation: benchmark updated from the retracted 2024 Nature article's 19% estimate to the authors' official revised analysis estimating a 17% reduction in global economic output by mid-century. Original 2024 Nature paper was retracted; revised analysis was posted by the Potsdam Institute for Climate Impact Research and is pending peer review.",
               "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** Kotz, Wenz & Levermann (2025), revised analysis posted by the Potsdam Institute for Climate Impact Research.\n\nThe researchers analyzed how continued climate change would affect global economic output by mid-century.\n\nThe benchmark is based on the revised analysis of the projected percentage reduction in global economic output by 2050."
             },
             {
@@ -581,7 +579,7 @@
               "higher_value_supports_claim": true,
               "higher_value_supports_policy": true,
               "status": "Locked",
-              "notes": "Internal derivation: benchmark is IPCC AR6's approximate 2050 global mean sea-level rise projection converted to inches; 0.25 meters × 39.37 = 9.84 inches, rounded to 10 inches.",
+              "notes": "Benchmark derivation: benchmark is IPCC AR6's approximate 2050 global mean sea-level rise projection converted to inches; 0.25 meters × 39.37 = 9.84 inches, rounded to 10 inches.",
               "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** IPCC AR6.\n\nThe Intergovernmental Panel on Climate Change projected global sea-level rise under future greenhouse-gas emissions scenarios.\n\nThe benchmark is based on the projected rise in global mean sea level by 2050 under a scenario in which greenhouse-gas emissions continue at roughly current levels, converted into inches."
             }
           ]
@@ -624,7 +622,7 @@
               "source_url": "https://www.cbo.gov/sites/default/files/cbofiles/attachments/11-13LowIncomeOptions.pdf",
               "source_fit_verified": true,
               "status": "Locked",
-              "notes": "Challenges substantiality of household burden; source URL should receive final source-url audit."
+              "notes": "Challenges the magnitude of household burdens."
             },
             {
               "fact_id": "cp_c03_o2",
@@ -654,7 +652,7 @@
               "higher_value_supports_claim": true,
               "higher_value_supports_policy": false,
               "status": "Locked",
-              "notes": "Internal derivation: benchmark is the projected average household annual energy-cost increase under a policy approximately equivalent to a $50/tCO2 carbon price, described to participants as about a 45-cent-per-gallon gasoline-price increase: 21%.",
+              "notes": "Benchmark derivation: benchmark is the projected average household annual energy-cost increase under a policy approximately equivalent to a $50/tCO2 carbon price, described to participants as about a 45-cent-per-gallon gasoline-price increase: 21%.",
               "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** Columbia/Rhodium carbon-tax modeling summary.\n\nResearchers modeled household energy-cost effects of a carbon-pricing policy approximately equivalent to a $50 per metric ton carbon price.\n\nThe benchmark is based on the projected percentage increase in the average household's annual energy costs under that policy."
             }
           ]
@@ -664,7 +662,7 @@
           "claim_text": "Carbon pricing imposes substantial economic costs on firms and workers, especially in carbon-intensive industries such as steel, cement, chemicals, and petroleum refining.",
           "claim_valence_for_policy": "Con",
           "status": "Locked",
-          "notes": "Industry-performance claim revised to use concrete industry examples; benchmark uses composite RFF production measure.",
+          "notes": "Industry-performance claim with a composite RFF production benchmark.",
           "facts": [
             {
               "fact_id": "cp_c04_p1",
@@ -675,7 +673,7 @@
               "source_url": "https://researchrepository.ilo.org/view/pdfCoverPage?download=true&filePid=13135639210002676&instCode=41ILO_INST",
               "source_fit_verified": true,
               "status": "Locked",
-              "notes": "Employment channel in carbon-intensive industries; source URL should receive final source-url audit."
+              "notes": "Employment effects in carbon-intensive industries."
             },
             {
               "fact_id": "cp_c04_p2",
@@ -727,7 +725,7 @@
               "higher_value_supports_claim": true,
               "higher_value_supports_policy": false,
               "status": "Locked",
-              "notes": "Internal derivation: benchmark is the simple arithmetic mean of projected production/output declines across selected carbon-intensive industries under an approximately $10/tCO2 policy: 1.1% decline.",
+              "notes": "Benchmark derivation: benchmark is the simple arithmetic mean of projected production/output declines across selected carbon-intensive industries under an approximately $10/tCO2 policy: 1.1% decline.",
               "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** Resources for the Future industry modeling.\n\nResearchers modeled the effects of a carbon price on production across carbon-intensive industries.\n\nThe benchmark used in this study is calculated by standardizing the reported production changes for each industry and averaging them to produce a single benchmark representing the typical effect across the industries included in the analysis."
             }
           ]
@@ -737,7 +735,7 @@
           "claim_text": "Carbon pricing substantially reduces long-run economic growth.",
           "claim_valence_for_policy": "Con",
           "status": "Locked",
-          "notes": "Aggregate GDP-growth claim; added after carbon module review.",
+          "notes": "Aggregate GDP-growth claim.",
           "facts": [
             {
               "fact_id": "cp_c05_p1",
@@ -800,7 +798,7 @@
               "higher_value_supports_claim": true,
               "higher_value_supports_policy": false,
               "status": "Locked",
-              "notes": "Internal derivation: benchmark is the IMF-reviewed model estimate that a $50/tCO2-equivalent carbon price reduces U.S. GDP by about 0.7% by 2050.",
+              "notes": "Benchmark derivation: benchmark is the IMF-reviewed model estimate that a $50/tCO2-equivalent carbon price reduces U.S. GDP by about 0.7% by 2050.",
               "participant_popup_text": "How is the correct answer determined?\n\nYour answer to this question will be compared with a benchmark derived from the following published research.\n\n**Source:** IMF review of carbon-pricing macroeconomic models.\n\nResearchers reviewed model-based estimates of the long-run economic effects of carbon pricing.\n\nThe benchmark is based on the projected percentage reduction in U.S. GDP by 2050 under a carbon-pricing policy approximately equivalent to $50 per metric ton of carbon dioxide."
             }
           ]

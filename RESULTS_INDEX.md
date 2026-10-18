@@ -1,4 +1,4 @@
-# Results audit index
+# Results index
 
 Run `reproduce_all_main_results.py` and `reproduce_all_si_results.py` before using this index. Every path below
 is relative to the repository root.

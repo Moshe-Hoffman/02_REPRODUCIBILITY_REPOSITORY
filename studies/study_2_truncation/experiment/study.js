@@ -1,7 +1,6 @@
 /*
 TRUNCATION STUDY – cognition.run (jsPsych 8.x) – Version 9.7
 Created: 2026-03-04 09:15:56 UTC-05:00
-Edited from: Version 9.6
 Edits since prior version:
 - Boxes: removed Sample size from Block 1 info/generator boxes.
 - Boxes: removed Cutoff value from Block 1 and Block 2 boxes (still shown in Block 3 boxes where applicable).

@@ -1,6 +1,6 @@
 /*******************************************************
  * Judge Study — Cognition.run (jsPsych 8.x)
- * JS v10.0 (edited from JS v8.3.2)
+ * Study 3 legal-audience task
  * Created: 2026-06-12 10:39 ET
 *  - EDITING-READY PASS: added a preview-mode render-check first trial before the main timeline.
  */
@@ -1219,8 +1219,6 @@ function caseHeaderHtml(plan, showSummaryToggle) {
         </div>
     `;
   }
-
-  /* ==================== LEGACY FACT CARD BUILDERS REMOVED ==================== */
 
 // Highlight word/phrase differences between two near-identical gist options.
 // Word-level LCS diff; wraps non-common tokens in <span class="diff">...</span>.
@@ -3222,8 +3220,6 @@ function pre_claim_beliefs_block(jsPsych, plan) {
   }
 
 
-  /* ==================== LEGACY REVIEW SCREEN REMOVED ==================== */
-
   
 function case_priors_screen(jsPsych, plan) {
   const caseObj = plan.caseObj || {};
@@ -3323,8 +3319,6 @@ ${continueButtonHtml()}
     }
   };
 }
-
-  /* ==================== OBSOLETE DOSSIER SCREENS REMOVED ==================== */
 
   /* ==================== POST-EVIDENCE JUDGMENTS ==================== */
   function judgment_transition_screen(jsPsych) {

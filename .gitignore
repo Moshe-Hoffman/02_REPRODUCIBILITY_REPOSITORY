@@ -16,8 +16,6 @@ studies/*/output_si/*
 main_results_reproduction_summary.csv
 si_reproduction_summary.csv
 si_reported_value_checks.csv
-privacy_audit_report.csv
-privacy_audit_summary.txt
 
 # Never add restricted source exports to the public repository.
 restricted_data/

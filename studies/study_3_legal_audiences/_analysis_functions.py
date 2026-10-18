@@ -1,16 +1,7 @@
 #!/usr/bin/env python3
-"""
-Preregistered analysis for Judge Study pilot/main data.
+"""Statistical functions used by the Study 3 reproduction scripts.
 
-Works in either mode:
-  1. Command line:
-       python analyze_judge_study_prereg.py --data file1.csv file2.csv --stimuli stimuli.json
-  2. Python Launcher / double-click:
-       Put this script in the same folder as the Cognition CSV export(s) and stimuli JSON.
-       It will merge all CSV files in that folder except previously merged/output files, auto-detect the JSON,
-       and write outputs to analysis_outputs.
-
-Expected current JS page_type values:
+Expected task ``page_type`` values:
   - s1_layer2_priors        claim priors; answers stored as JSON in rows
   - s3_layer2_post          claim posteriors; answers stored as JSON in rows
   - s1_case_outcome_prior   verdict prior; answer stored in probability
@@ -57,11 +48,7 @@ def first_existing_col(df: pd.DataFrame, candidates: Iterable[str]) -> Optional[
 
 
 def looks_like_judge_csv(path: Path) -> bool:
-    """Return True if a CSV appears to be from the judge study rather than another project.
-
-    This prevents Python Launcher / double-click mode from accidentally merging unrelated
-    CSVs in the same folder, such as policy-validation-study.csv.
-    """
+    """Return True if a CSV appears to be from the legal-audience study."""
     try:
         sample = pd.read_csv(path, nrows=200, low_memory=False)
     except Exception:
@@ -188,7 +175,7 @@ def participant_case_treatments(df: pd.DataFrame, pid_col: str) -> pd.DataFrame:
 
     The current JS usually writes treatment metadata on judge_record_review rows, but
     Cognition exports can be sparse: some metadata fields may appear only on other rows
-    or may be absent from older pilot batches. This function therefore searches all
+    or may be absent from some exports. This function therefore searches all
     rows within each participant-case group and uses the last row that contains useful
     treatment information. Missing optional columns are created as NA instead of
     causing a KeyError.

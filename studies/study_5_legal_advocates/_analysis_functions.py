@@ -1092,8 +1092,7 @@ def _plot_evidence_responsiveness_panel(ax, vals: pd.DataFrame, title: str, evid
 def show_model_adjusted_figure(claim: pd.DataFrame, verdict: pd.DataFrame, outdir: Optional[Path] = None) -> None:
     """Create a model-estimated evidence-responsiveness figure.
 
-    This replaces the earlier model-adjusted cell-means figure. It plots the
-    estimated marginal effect of Plaintiff-favoring and Defendant-favoring
+    This figure plots the estimated marginal effect of Plaintiff-favoring and Defendant-favoring
     evidence separately for Defendant and Plaintiff advocates, using the same
     participant-clustered covariance logic as the regressions. This directly
     visualizes the quantities underlying gamma_P and gamma_D.
@@ -1126,7 +1125,6 @@ def show_model_adjusted_figure(claim: pd.DataFrame, verdict: pd.DataFrame, outdi
 
     if outdir is not None:
         outdir.mkdir(parents=True, exist_ok=True)
-        # Keep the previous filename so existing workflows find the replacement.
         fig_path = outdir / "figure_5_model_adjusted_evidence_responsiveness.png"
         fig.savefig(fig_path, dpi=300, bbox_inches="tight")
         plt.close(fig)

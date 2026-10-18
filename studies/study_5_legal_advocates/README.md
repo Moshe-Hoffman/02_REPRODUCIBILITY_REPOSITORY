@@ -17,14 +17,11 @@ coefficients in `output_si/`.
 
 `study5_main_analysis_data.csv` is a de-identified version of the final, already-filtered trial-level export. It contains the 204 participants in the manuscript analysis. Prolific, study, session, and run identifiers; IP and browser metadata; timestamps; free-text arguments; and feedback have been removed. The replacement `participant_id` codes are study-specific, and no public mapping connects them to Prolific accounts or to participants in another study.
 
-The included `_prepare_public_data.py` documents the privacy transformation. It is not part of ordinary reproduction and requires authorized access to the restricted export.
-
 ## Experiment materials
 
 - `experiment/study.js`: final legal-advocacy task code;
 - `experiment/stimuli.json`: final cleaned/pruned legal-case stimuli;
 - `experiment/assets/figure_5_interface_screenshot.jpg`: interface screenshot embedded in Figure 5.
-- `experiment/manuscript_figure_reference.pdf`: the current approved Figure 5 composite.
 
 ## Main-text estimands
 

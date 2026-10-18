@@ -15,8 +15,6 @@ explicit archive/test placeholder. The original Firebase project configuration
 is also redacted; supply a new configuration in `firebaseSetup.js` and apply
 appropriate database security rules before redeploying the task. Neither item
 is needed to reproduce the analyses. The two high-resolution screens used in
-Figure 1 are in `experiment/assets/`;
-`manuscript_figure_reference.pdf` is a frozen visual reference for checking the
-regenerated panels and later composite layout.
+Figure 1 are in `experiment/assets/`.
 
 Key outputs are `main_text_results.txt`, the corresponding CSV, model tables, lambda estimates, plot data, and `Figure_1_statistical_panels.pdf`. Error bars in the regenerated panels are 95% confidence intervals, as stated in the manuscript.

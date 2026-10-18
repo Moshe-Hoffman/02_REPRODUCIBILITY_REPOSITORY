@@ -1,7 +1,7 @@
 /*******************************************************
  * Legal Evidence Study — Cognition.run (jsPsych 8.x)
  * Clean rebuild — one-case disputed-issue/dossier design
- * Version: v7.06; Time of last edit: 6:33 p.m. June 5 2026
+ * Study 5 legal-advocacy task
  *
  * Active design:
  *  - One random case per participant.

@@ -1,17 +1,5 @@
 #!/usr/bin/env python3
-"""
-Policy advocacy preregistration analysis runner.
-
-Put this script in the same folder as:
-  - the policy_advocacy_stimuli JSON, and
-  - one or more advocate jsPsych CSV exports.
-
-Then run:
-  python policy_advocacy_preregistration_July17_updated.py
-
-The script prints a readable report to the terminal. To save it:
-  python policy_advocacy_preregistration_July17_updated.py > advocacy_prereg_results.txt
-"""
+"""Statistical functions used by the Study 6 reproduction scripts."""
 
 from __future__ import annotations
 
@@ -78,12 +66,10 @@ PROCESS_SUBSETS = {
 EXCLUDE_PREVIEW_EXPOSURES = True
 APPLY_BROAD_LLM_EXCLUSIONS = True
 
-# Broad LLM/paste-assistance screen agreed during pilot review. These exclusions
-# are intentionally explicit rather than inferred from prose style. The first,
-# fourth, and sixth PIDs contain prompt/meta-instruction leakage in the submitted
-# argument; the remaining PIDs were flagged by the agreed broad timing/paste
-# screen. Keep this list fixed for the preregistered analysis unless the
-# preregistration is amended before looking at additional outcomes.
+# Prespecified broad LLM/paste-assistance screen. These exclusions are explicit
+# rather than inferred from prose style. Three cases contain prompt or
+# meta-instruction leakage in the submitted argument; the remaining cases were
+# flagged by the timing/paste screen described in the Supplementary Information.
 BROAD_LLM_EXCLUSION_SHA256 = {
     "cde17446cb1fe2dad19f0133ecec4999ad3b08a3f29e365eba160ed6db1dc1d0": "prompt/meta-instruction leakage in argument",
     "32b47e984f7e4d19bce8d6a2dab42442f47d831bb0c81ba0ea05cca7ed51239f": "extreme completion/composition timing; likely pasted/generated",
@@ -1234,10 +1220,6 @@ def save_attenuation_estimates(
         "B": "Asymmetric updating",
     }
     # Keep all three specifications used in the manuscript attenuation display.
-    # The previous plotting code still looked for an obsolete two-specification
-    # label ("Process-adjusted"), even though the fitted models and saved values
-    # use "Sharing only" and "All process measures".  That mismatch caused the
-    # script to fail after all models had been estimated.
     specifications = ["Baseline", "Sharing only", "All process measures"]
     colors = {
         "Baseline": "#4C4C4C",
