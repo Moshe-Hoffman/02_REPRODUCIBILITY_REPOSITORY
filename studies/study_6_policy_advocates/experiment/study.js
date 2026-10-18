@@ -25,9 +25,9 @@
   const CFG = {
     study_id: "policy_advocacy_carbon_pricing_forced",
     js_version: "policy_advocacy_v1_35_carbon_pricing_bonus_clarified",
-    stimuli_path: "stimuli/policy_advocacy_stimuli.json",
+    stimuli_path: "stimuli.json",
     forced_policy_id: "carbon_pricing",
-    prolific_completion_code: "C1379C4O",
+    prolific_completion_code: "YOUR_PROLIFIC_COMPLETION_CODE",
     min_argument_words: 100,
     preview_min_argument_words: 0,
     show_progress_bar: true,

@@ -5,7 +5,7 @@ Run `reproduce_main_results.py` with Python Launcher or `python3 reproduce_main_
 Run `reproduce_si_results.py` for the complete H1--H4 directional-test battery and the
 preregistered mixed-effects robustness specifications.
 
-`data/study4_main_analysis_data.csv` contains the first complete eligible exposure for each of 288 reviewers. `reviewer_id` and `dossier_id` are repository-local anonymous keys. IDs embedded inside response JSON were remapped consistently. Account/session/study IDs, advocate IDs, network/device fields, timestamps, arguments, and feedback are excluded.
+`data/study4_main_analysis_data.csv` contains the first complete eligible exposure for each of 288 reviewers. `reviewer_id` and `dossier_id` are repository-local anonymous keys. IDs embedded inside response JSON were remapped consistently. Account/session/study IDs, advocate IDs, network/device fields, timestamps, and feedback are excluded.
 
 Two additional minimized inputs reproduce the SI completion diagnostics.
 `study4_reviewer_completion_balance_data.csv` contains only completion, randomized
@@ -25,6 +25,14 @@ endpoint has been replaced with a placeholder for public release. A new
 deployment URL would be required to redeploy these interfaces.
 `policy_advocacy_stimuli.json` supplies the shared final stimulus definitions. The Figure 4 screen is
 `experiment/assets/figure_4_interface_screenshot.png`.
+
+The corresponding `carbon_pricing_reviewer_dossiers.json` and
+`minimum_wage_reviewer_dossiers.json` files make the archived reviewer
+interfaces directly runnable. They contain the same 288 anonymous dossiers,
+including the advocate arguments and attached facts exactly as presented to
+reviewers. The argument text was screened before release; participant and
+platform identifiers, feedback, timestamps, and operational assignment
+metadata remain excluded.
 
 The default entry point covers the main-text models and process attenuation;
 the separate SI runner executes the larger preregistered robustness battery.

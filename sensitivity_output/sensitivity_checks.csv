@@ -1,0 +1,16 @@
+study,estimand,expected_rounded,observed,pass
+2,pooled lambda,0.361,0.360576084726031,True
+3,claim T2-T1,22.27,22.268622690709666,True
+3,claim T1-T3,15.42,15.42204969711008,True
+3,verdict T2-T1,24.47,24.47149712850245,True
+3,verdict T1-T3,15.09,15.090675333093651,True
+4,claim warrantedness,0.385,0.38457019206864496,True
+4,quantitative estimates,0.209,0.2087049456714942,True
+4,policy support,0.526,0.5262753550817435,True
+5,claim advocacy,0.886,0.8862548732878227,True
+5,claim asymmetry,2.157,2.1573929647920833,True
+5,verdict advocacy,1.323,1.3226922352591306,True
+6,claim advocacy,0.468,0.46746777838767417,True
+6,quantitative advocacy,0.179,0.17862427713177226,True
+6,policy advocacy,0.836,0.8357073889470378,True
+6,asymmetry on aligned claims,0.774,0.7734698667932336,True

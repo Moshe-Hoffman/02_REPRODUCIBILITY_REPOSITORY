@@ -38,7 +38,7 @@ from scipy.stats import norm, t
 # ============================================================
 
 CSV_PATHS = [
-    "data/study2_main_analysis_data.csv",
+    os.environ.get("STUDY2_DATA_PATH", "data/study2_main_analysis_data.csv"),
 ]
 
 RAW_PARTICIPANT_COL = "run_id"
@@ -917,6 +917,9 @@ fig.savefig(OUTPUT_DIR / "Figure_2_statistical_panels.png", dpi=300, bbox_inches
 
 primary_cells_table.to_csv(OUTPUT_DIR / "lambda_by_block_and_rule.csv", index=False)
 pd.DataFrame([primary_pooled]).to_csv(OUTPUT_DIR / "lambda_pooled.csv", index=False)
+primary_pooled_dm[[PARTICIPANT_COL, "response_minus_naive_dm", "gap_dm"]].to_csv(
+    OUTPUT_DIR / "primary_pooled_model_data.csv", index=False
+)
 pd.DataFrame(ordering_pooled_rows).to_csv(OUTPUT_DIR / "ordering_contrasts.csv", index=False)
 pd.DataFrame(dev_pooled_rows).to_csv(OUTPUT_DIR / "deviation_from_bayes_contrasts.csv", index=False)
 

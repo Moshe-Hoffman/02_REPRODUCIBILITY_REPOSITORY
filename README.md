@@ -8,8 +8,8 @@ and the analyses reported in the Supplementary Information.
 The repository was validated in a Python 3.13.5 environment using
 `requirements-lock.txt`: all 182 main-text checks and all 648 displayed SI
 values passed. The final cross-study sensitivity analysis is the only reported
-analysis that requires restricted restored-case inputs and therefore is
-documented but not rerunnable from the public repository.
+analysis outside those two validation batteries; it is now independently
+rerunnable from minimized, anonymous model-ready inputs.
 
 ## Repository organization
 
@@ -25,6 +25,10 @@ studies/study_N_name/
 ├── experiment/                  # Task source, stimulus files, and figure assets
 └── output/                      # Regenerated reports, tables, checks, and figures
 ```
+
+The repository root also contains `sensitivity_data/` and
+`reproduce_sensitivity_results.py` for the SI's cross-study restored-case
+sensitivity table.
 
 The main-text entry point is `reproduce_main_results.py`. It requires no command-line arguments and resolves every path relative to its own location, so it can be run from Python Launcher or an editor without changing the working directory. Files beginning with an underscore contain supporting code used by the reproduction scripts and are not intended to be opened separately.
 
@@ -73,6 +77,10 @@ configuration are intentionally omitted or redacted; the study README explains
 what must be supplied before redeployment. This does not affect analysis
 reproduction.
 
+Prolific completion codes in the archived task source have been replaced with
+the explicit placeholder `YOUR_PROLIFIC_COMPLETION_CODE` and must be configured
+before redeployment.
+
 `reproduce_all_main_results.py` verifies both the manuscript targets and the presence of the required data-driven panels, then writes `main_results_reproduction_summary.csv`.
 
 ## Running everything
@@ -102,9 +110,8 @@ folder and do not overwrite the shorter main-text reports.
 The frozen `si_targets/reported_values.csv` manifest records the 648 displayed
 analysis values in the six study-specific SI results sections and the generated
 output supporting each value. `reproduce_all_si_results.py` validates that manifest after all
-six SI runners finish and writes `si_reported_value_checks.csv`. The final cross-study
-sensitivity table restores excluded or repeated cases that are not included in
-the deposited final-sample datasets. Its reported values were checked against
-restricted source exports, but it is not rerunnable from this repository. Those
-restricted restored-case inputs are intentionally not deposited because they
-retain source information excluded by the public-data minimization process.
+six SI runners finish and writes `si_reported_value_checks.csv`.
+
+Run `python3 reproduce_sensitivity_results.py` to reproduce the final
+cross-study sensitivity table. Its minimized inputs are in `sensitivity_data/`;
+the generated estimates and checks are written to `sensitivity_output/`.

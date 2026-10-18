@@ -74,7 +74,7 @@ var end_screen = {
     }
   },
     on_finish: function(){
-        window.location =  "https://app.prolific.com/submissions/complete?cc=C1379C4O"
+        window.location =  "https://app.prolific.com/submissions/complete?cc=YOUR_PROLIFIC_COMPLETION_CODE"
     }
 };
 

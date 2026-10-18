@@ -429,7 +429,7 @@ function shuffle(arr) {
 
 /* ==================== PROLIFIC COMPLETION ==================== */
 // Set your Prolific completion code here (and keep the redirect URL as-is).
-const PROLIFIC_COMPLETION_CODE = "C1379C4O";
+const PROLIFIC_COMPLETION_CODE = "YOUR_PROLIFIC_COMPLETION_CODE";
 const PROLIFIC_REDIRECT_URL = `https://app.prolific.com/submissions/complete?cc=${encodeURIComponent(PROLIFIC_COMPLETION_CODE)}`;
 
 
@@ -1062,7 +1062,7 @@ ${stripped}`;
 
   /* ==================== JSON LOADING ==================== */
   // IMPORTANT: upload the JSON to cognition.run stimuli tab with this exact name.
-  const STIM_PATH = "stimuli/cleaned_pruned_based_on_best_validation_facts.json";
+  const STIM_PATH = "stimuli.json";
 
   async function loadStimuli() {
     const res = await fetch(STIM_PATH, { cache: "no-store" });

@@ -22,8 +22,8 @@
   const CFG = {
     study_id: "legal_evidence_clean_v7",
     js_version: "v7_clean_04_pruned_json",
-    stimuli_path: "stimuli/cleaned_pruned_based_on_best_validation_facts.json",
-    prolific_completion_code: "C1379C4O",
+    stimuli_path: "stimuli.json",
+    prolific_completion_code: "YOUR_PROLIFIC_COMPLETION_CODE",
     min_argument_words: 80,
     preview_min_argument_words: 0,
     show_progress_bar: true

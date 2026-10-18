@@ -54,8 +54,8 @@ const CFG = Object.freeze({
  END: Object.freeze({
   // Set these for your deployment (e.g., Prolific completion URL).
   // If redirect_url is empty, the end page will display the completion code (if provided) and instruct the participant to close the window.
-  redirect_url: "https://app.prolific.com/submissions/complete?cc=C1379C4O",
-  completion_code: "C1379C4O",
+  redirect_url: "https://app.prolific.com/submissions/complete?cc=YOUR_PROLIFIC_COMPLETION_CODE",
+  completion_code: "YOUR_PROLIFIC_COMPLETION_CODE",
  }),
 });
 

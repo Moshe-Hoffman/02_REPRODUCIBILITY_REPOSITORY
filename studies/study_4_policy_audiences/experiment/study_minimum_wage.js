@@ -19,11 +19,11 @@
   const CFG = {
     study_id: "policy_reviewer_v1",
     js_version: "policy_reviewer_minwage_final_disclosure_pid_safe_2026-08-25",
-    stimuli_path: "stimuli/policy_advocacy_stimuli.json",
-    reviewer_dossiers_path: "stimuli/policy_reviewer_runtime_minwage_final_aug20.json",
+    stimuli_path: "policy_advocacy_stimuli.json",
+    reviewer_dossiers_path: "minimum_wage_reviewer_dossiers.json",
     assignment_service_url: "PASTE_YOUR_ASSIGNMENT_SERVICE_URL_HERE", // Operational endpoint redacted from the public archive.
     assignment_study_key: "minwage_final_aug20_disclosure",
-    prolific_completion_code: "C1379C4O",
+    prolific_completion_code: "YOUR_PROLIFIC_COMPLETION_CODE",
     show_progress_bar: true,
     ask_claim_warranted: true,
     strict_completed_only: false,

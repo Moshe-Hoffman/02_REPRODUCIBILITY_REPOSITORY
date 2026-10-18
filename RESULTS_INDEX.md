@@ -34,10 +34,10 @@ values to the generated files containing their unrounded counterparts.
 
 These files cover all 648 displayed values in the six study-specific SI
 results sections. The final cross-study sensitivity table restores cases that
-are absent from the deposited final-sample datasets. It has been checked
-against restricted source exports, but it is not rerunnable from this
-repository because the required restored-case inputs retain source information
-excluded by the public-data minimization process and are not deposited.
+are absent from the deposited final-sample datasets. It is reproduced by
+`reproduce_sensitivity_results.py` from the anonymous model-ready files in
+`sensitivity_data/`; its estimates and validation checks are written to
+`sensitivity_output/`.
 
 ## Searching for one reported number
 

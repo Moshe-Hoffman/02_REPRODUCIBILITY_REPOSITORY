@@ -38,11 +38,12 @@ results to the generated outputs. Full coefficient tables and complete
 analysis transcripts remain available for auditing results not summarized in
 the prose.
 
-The final cross-study sensitivity table is outside the scope of the public rerun. Those
-analyses deliberately restore cases omitted from the canonical final-sample
-datasets, including repeated participation and failed attention checks. The
-reported values have been independently audited against the restricted source
-exports, but the restored-case inputs required to rerun them are not deposited
-because they retain source information excluded by the public-data minimization
-process. Accordingly, the present 648-value lock reproduces the six
-study-specific SI results sections but not that final cross-study table.
+The final cross-study sensitivity table deliberately restores cases omitted
+from the canonical final-sample datasets, including later repeat sessions and
+assistance-screen cases. Run `python3 reproduce_sensitivity_results.py` from
+the repository root to reproduce that table from the minimized model-ready
+files in `sensitivity_data/`. These files use repository-local anonymous keys
+and contain only the variables needed for the table's specified regressions.
+The 648-value lock remains the validation mechanism for the six study-specific
+SI results sections; the sensitivity runner writes its own checked output to
+`sensitivity_output/`.
